@@ -1,0 +1,8 @@
+@import "header.css";
+@import "body.css";
+@import "footer.css";
+@import "tables.css";
+@import "carousel.css";
+@import "others.css";
+
+body {font-family: Georgia, serif;}

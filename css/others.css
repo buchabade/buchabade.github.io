@@ -1,0 +1,51 @@
+.image {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.mobile_map {
+    display: none;
+}
+
+.member_image {
+    max-width: 250px;
+}
+
+.member_block {
+    float: left;
+    margin-right: 10px;
+}
+
+.business_image{
+    width: 320px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.business_title{
+    text-align: left;
+}
+
+@media (max-width: 920px) {
+
+    .mobile_map {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .member_block {
+        float: none;
+    }
+
+    .business_image{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .business_title{
+        text-align: center;
+    }
+
+}

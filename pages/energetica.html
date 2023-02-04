@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web da comunidade de Buchabade: Comunidade enerxética">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo_cler.png">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade enerxética / Buchabade</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <header>
+            <a class="header_title" href="../index.html">
+                <img src="../assets/logo_cler.png" alt="" class="header_logo">
+                &nbsp;BUCHABADE
+            </a>
+            <a href="novas.html"><b>!</b>&nbsp;Novas</a>
+            <a class="active" href="energetica.html">C. enerxética</a>
+            <a href="montes.html">C. de montes</a>
+            <a href="aguas.html">C. de augas</a>
+            <a href="negocios.html">Negocios locais</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </header>
+    </div>
+
+    <article id="body">
+        <div class="body">
+            <div class="left_side_menu">
+                <div>
+                    <h2>Acceso rápido:</h2>
+                </div>
+                <div>
+                    <a class="left_side_menu_item" href="#comunidade"><i>A comunidade</i></a>
+                </div>
+                <div>
+                    <a class="left_side_menu_item" href="#novas"><i>Novas</i></a>
+                </div>
+                <div>
+                    <a class="left_side_menu_item" href="#directiva"><i>Directiva</i></a>
+                </div>
+            </div>
+
+            <div class="content_communities">
+                <h1 id="comunidade">A comunidade enerxética.</h1>
+                <label>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique mattis pretium. Donec
+                    pharetra placerat felis vitae varius. Mauris aliquam, lorem ac finibus ultricies, diam turpis
+                    vestibulum dolor, id auctor mi ipsum a sapien. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et ultrices posuere cubilia curae; Nunc quis maximus nisl. Nulla viverra justo odio, vel facilisis
+                    orci cursus ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    egestas.
+                </label>
+
+                <br/><br/>
+
+                <h1 id="novas">Novas da comunidade de enerxética:</h1>
+                <table class="output"></table>
+                <script src="../scripts/spreadsheet_energetica.js"></script>
+
+                <br/>
+
+                <div id="directiva">
+                    <h1>Directiva:</h1>
+                    <div style="text-align: center">
+                        <div class="member_block">
+                            <h4>Integrante 1 - Presidente</h4>
+                            <img class="member_image" src="../assets/img3.jpg" alt="Integrante x">
+                        </div>
+                        <div class="member_block">
+                            <h4>Integrante 2 - Vicepresidente</h4>
+                            <img class="member_image" src="../assets/img3.jpg" alt="Integrante x">
+                        </div>
+                        <div class="member_block">
+                            <h4>Integrante 3 - Secretario</h4>
+                            <img class="member_image" src="../assets/img3.jpg" alt="Integrante x">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div id="footer">
+        <footer>
+            <div style="padding-top: 10px">
+                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
+                <p>Comunidade de Buchabade</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

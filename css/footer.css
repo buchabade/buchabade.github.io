@@ -1,0 +1,8 @@
+/* Needed to fill all the space between header and footer */
+footer{ min-height:100px; display: block; }
+
+footer {
+    text-align: center;
+    background-color: DarkGreen;
+    color: white;
+}

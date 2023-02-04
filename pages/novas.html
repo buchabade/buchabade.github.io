@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web da comunidade de Buchabade: Novas">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo_cler.png">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas / Buchabade</title>
+</head>
+
+<body>
+    <div id="header">
+        <header>
+            <a class="header_title" href="../index.html">
+                <img src="../assets/logo_cler.png" alt="" class="header_logo">
+                &nbsp;BUCHABADE
+            </a>
+            <a class="active" href="novas.html"><b>!</b>&nbsp;Novas</a>
+            <a href="energetica.html">C. enerxética</a>
+            <a href="montes.html">C. de montes</a>
+            <a href="aguas.html">C. de augas</a>
+            <a href="negocios.html">Negocios locais</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </header>
+    </div>
+
+    <article id="body">
+        <div class="body">
+            <div class="center">
+                <h1>Últimas novas:</h1>
+                <div style="text-align: center">
+                    <label>
+                        Aquí móstrase a nova máis recente de cada comunidade. Podes ver todas as novas en detalle na sección
+                        de cada comunidade:<br/><br/>
+                    </label>
+                </div>
+                <table class="output_montes"></table>
+                <script src="../scripts/spreadsheet_newest.js"></script>
+            </div>
+        </div>
+    </article>
+
+    <div id="footer">
+        <footer>
+            <div style="padding-top: 10px">
+                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
+                <p>Comunidade de Buchabade</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
