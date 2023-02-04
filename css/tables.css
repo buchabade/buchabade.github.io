@@ -7,6 +7,7 @@ table td, table th {
     border: 1px solid grey;
     padding: 8px;
 }
+
 table tr:nth-child(even){background-color: floralwhite;}
 table tr:nth-child(odd){background-color: #ddd;}
 
@@ -17,4 +18,14 @@ table th {
     text-align: center;
     background-color: darkgreen;
     color: white;
+}
+
+@media (max-width: 920px) {
+
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
 }
