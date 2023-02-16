@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web da comunidade de Buchabade: Avisos">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo_cler.png">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos / Buchabade</title>
+</head>
+
+<body>
+    <div id="header">
+        <header>
+            <a class="header_title" href="../index.html">
+                <img src="../assets/logo_cler.png" alt="" class="header_logo">
+                &nbsp;BUCHABADE
+            </a>
+            <a class="active" href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
+            <a href="energetica.html">C. enerxética</a>
+            <a href="montes.html">C. de montes</a>
+            <a href="aguas.html">C. de augas</a>
+            <a href="negocios.html">Negocios locais</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </header>
+    </div>
+
+    <!-- TODO: OPTIMIZAR -->
+    <article id="body">
+        <div class="body">
+            <div class="center">
+                <h1 id="novas-comunidades">Últimas novas das Comunidades:</h1>
+                <div style="text-align: center">
+                    <label>
+                        Aquí móstrase a nova máis recente de cada comunidade. Podes ver todas as novas en detalle na sección
+                        de cada comunidade:<br/><br/>
+                    </label>
+                </div>
+                <table class="output_montes"></table>
+                <script src="../scripts/spreadsheet_newest.js"></script>
+            </div>
+        </div>
+
+        <!-- TODO: MARGIN TOP -->
+        <div class="body" style="margin: 0;">
+            <div class="center">
+                <h1 id="xornada-traballo-4-marzo">Xornada de traballo:
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoa_FxVKQY7p_RAlcMcXwmznVDf1HHaHhIC4BlDugbEotjjg/viewform?usp=sf_link"
+                       target="_blank">Inscríbete</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="body" style="margin: 0 20px 20px 20px;">
+            <div class="content_aviso_image">
+                <img style="width: 82.5%; max-width: 400px" src="../assets/avisos/Xornada_traballo-4_marzo.png" alt="">
+            </div>
+
+            <div class="content_aviso_text">
+                <div class="mobile_sidebar_item">
+                    <img style="width: 100%;" src="../assets/avisos/Xornada_traballo-4_marzo.png" alt="">
+                    <br/><br/>
+                </div>
+                <label>
+                    <b>O sábado 4 de marzo, de 10:00 a 13:30</b> levarase a cabo unha xornada de traballo comunal
+                    <a href="https://goo.gl/maps/xuC38gp3xC3XXHjh8"
+                       target="_blank"><b>no Club Hípico Atlántico</b></a>.
+                    <br/><br/>
+                    Realizarase o seguinte:
+                    <ul>
+                        <li>Prantaremos unhas frondosas.</li>
+                        <li>Eliminaremos unhas invasoras.</li>
+                        <li>Crearemos unha charca para anfibios coa auga sobrante do depósito de augas.</li>
+                        <li>E remataremos cuns pinchos no bar de Santa Ana para celebralo.</li>
+                    </ul>
+                    <br/>
+                    <b>Para os pinchos e o seguro debes inscribirte:</b> Accede ao formulario de inscripción
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoa_FxVKQY7p_RAlcMcXwmznVDf1HHaHhIC4BlDugbEotjjg/viewform?usp=sf_link"
+                       target="_blank">aquí</a>.
+                    <br/><br/>
+                    Tamén podes contactar con nós polas seguintes vías:
+                    <ul>
+                        <li>Email: <a href="mailto:comunidadeenerxeticabuchabade@gmail.com"
+                                      target="_blank">comunidadeenerxeticabuchabade@gmail.com</a></li>
+                        <li>Teléfono ou WhatsApp: +34 633 18 06 25 (Fernando Malvar)</li>
+                    </ul>
+                    <br/>
+                    Organiza: CMVMC de Buchabade.
+                    <br/>
+                    Colabora: A Rente do Chan.
+
+
+                </label>
+            </div>
+        </div>
+    </article>
+
+    <div id="footer">
+        <footer>
+            <div style="padding-top: 10px">
+                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
+                <p>Comunidade de Buchabade</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
