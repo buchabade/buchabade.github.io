@@ -49,6 +49,7 @@ header a.header_title_active {
 .header_logo{
     height: 16px;
     width: 16px;
+    vertical-align: middle;
 }
 
 @media (max-width: 920px) {
