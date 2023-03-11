@@ -3,6 +3,15 @@
 @import "footer.css";
 @import "tables.css";
 @import "carousel.css";
+@import "text.css";
 @import "others.css";
 
-body {font-family: Georgia, serif;}
+body {font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;}
+
+/* PROJECT PALETTE:
+    #344E41
+    #3A5A40
+    #588157
+    #A3B18A
+    #DAD7CD
+*/

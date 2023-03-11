@@ -3,53 +3,61 @@ header{ min-height:40px; }
 
 header {
     overflow: hidden;
-    background-color: #408000;
+    background-color: #344E41;
+    text-align: center;
 }
 
 header a {
     float: left;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
 }
 
-header a:hover {
-    background-color: yellowgreen;
-    color: white;
-}
-
-header a.active {
-    background-color: DarkGreen;
-    color: white;
-    user-select: none;
-}
-
 header a.header_title {
-    background-color: #408000;
     color: white;
-    text-align: center;
     font-weight: bold;
     overflow: hidden;
+    font-size: 25px;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #A3B18A;
+}
+
+header a:visited {
+    color: white;
 }
 
 header a.header_title:hover {
-    background-color: yellowgreen;
     color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #A3B18A;
+}
+
+header a.active {
+    background-color: #344E41;
+    color: white;
+    user-select: none;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #A3B18A;
 }
 
 header a.header_title_active {
-    background-color: DarkGreen;
+    background-color: #344E41;
     color: white;
     font-weight: bold;
     user-select: none;
-}
-
-.header_logo{
-    height: 16px;
-    width: 16px;
-    vertical-align: middle;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #A3B18A;
+    font-size: 25px;
 }
 
 @media (max-width: 920px) {

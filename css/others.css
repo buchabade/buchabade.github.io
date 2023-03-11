@@ -3,13 +3,6 @@
     margin-bottom: 5px;
 }
 
-.link_aviso:link{
-    color: black;
-}
-
-.link_aviso:visited{
-    color: black;
-}
 
 .mobile_sidebar_item {
     display: none;
