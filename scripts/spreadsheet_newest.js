@@ -8,7 +8,7 @@ const url = `${base}&sheet=${sheetName}&tq=${query}`
 
 const data = []
 document.addEventListener('DOMContentLoaded', init)
-const output = document.querySelector('.output_montes')
+const output = document.querySelector('.output_novas')
 
 function init() {
     fetch(url)

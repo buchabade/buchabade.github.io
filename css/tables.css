@@ -4,20 +4,24 @@ table {
 }
 
 table td, table th {
-    border: 1px solid grey;
+    border: 1px solid #DAD7CD;
     padding: 8px;
 }
 
-table tr:nth-child(even){background-color: floralwhite;}
-table tr:nth-child(odd){background-color: #ddd;}
+table tr:nth-child(even){background-color: #A3B18A;}
+table tr:nth-child(odd){background-color: #DAD7CD;}
 
 table th {
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    background-color: darkgreen;
+    background-color: #344E41;
     color: white;
+}
+
+table tr {
+    text-align: center;
 }
 
 @media (max-width: 920px) {

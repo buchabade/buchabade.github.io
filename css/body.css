@@ -46,7 +46,7 @@ body {
 }
 
 .item_center {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .item_right {
@@ -57,6 +57,10 @@ body {
 
 .item_mobile {
     display: none;
+}
+
+.item_widescreen{
+    display: block;
 }
 
 /* TODO: REVIEW */
@@ -140,7 +144,11 @@ body {
 
     .item_mobile {
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
+    }
+
+    .item_widescreen {
+        display: none;
     }
 
     /* TODO: REVIEW */
