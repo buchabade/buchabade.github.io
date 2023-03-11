@@ -1,20 +1,37 @@
+.quick_access_button, .quick_access_button:visited {
+    border: 1px solid #DAD7CD;
+    background-color: #3A5A40;
+    float: left;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 75%;
+}
+
+.quick_access_button:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #A3B18A;
+}
+
+.member_block {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 220px;
+}
+
 .image {
     width: 100%;
-    margin-bottom: 5px;
 }
 
 
 .mobile_sidebar_item {
     display: none;
-}
-
-.member_image {
-    max-width: 250px;
-}
-
-.member_block {
-    float: left;
-    margin-right: 10px;
 }
 
 .business_image{
@@ -29,15 +46,21 @@
 
 @media (max-width: 920px) {
 
+    .member_block {
+        width: 31%;
+    }
+
+
+
+
+
+
+
     .mobile_sidebar_item {
         display: block;
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
-    }
-
-    .member_block {
-        float: none;
     }
 
     .business_image{

@@ -40,6 +40,13 @@ body {
     text-align: left;
 }
 
+.content_center_to_right {
+    width: 75%;
+    margin-left: 25px;
+    margin-right: 0;
+    text-align: justify;
+}
+
 .item_left {
     margin-bottom: 25px;
     width: 85%;
@@ -88,24 +95,6 @@ body {
 }
 
 /* TODO: REVIEW */
-.left_side_menu_item {
-    background-color: dimgrey;
-    float: left;
-    color: #f2f2f2;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    width: 75%;
-}
-
-/* TODO: REVIEW */
-.left_side_menu_item:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* TODO: REVIEW */
 .business_mobile{display: none}
 
 /* TODO: REVIEW */
@@ -129,6 +118,12 @@ body {
     }
 
     .content_center{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content_center_to_right {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
