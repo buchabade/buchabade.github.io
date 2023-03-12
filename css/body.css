@@ -62,6 +62,14 @@ body {
     margin-left: auto;
 }
 
+.item_mobile {
+    display: none;
+}
+
+.item_widescreen{
+    display: block;
+}
+
 .content_flex {
     display: flex;
     margin-bottom: 35px;
@@ -104,6 +112,15 @@ body {
     }
 
     .content_left {
+        display: none;
+    }
+
+    .item_mobile {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .item_widescreen {
         display: none;
     }
 
