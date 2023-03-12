@@ -1,4 +1,4 @@
-.quick_access_button, .quick_access_button:visited {
+.side_menu_button, .side_menu_button:visited{
     border: 1px solid #DAD7CD;
     background-color: #3A5A40;
     float: left;
@@ -11,7 +11,7 @@
     width: 75%;
 }
 
-.quick_access_button:hover {
+.side_menu_button:hover {
     color: white;
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -29,6 +29,18 @@
     width: 100%;
 }
 
+#comunidade{
+    display: block;
+}
+
+#novas{
+    display: none;
+}
+
+#directiva{
+    display: none;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -38,6 +50,23 @@
 
     .member_block {
         max-width: 30%;
+    }
+
+    .side_menu_button{
+        width: 100%;
+        text-align: center;
+    }
+
+    #comunidade{
+        display: block;
+    }
+
+    #novas{
+        display: block;
+    }
+
+    #directiva{
+        display: block;
     }
 
 }

@@ -35,29 +35,55 @@
         <div class="body">
             <div class="content_left">
                 <div class="item_left">
-                    <h2>Acceso rápido</h2>
-                    <a class="quick_access_button" href="#comunidade"><i>A comunidade</i></a>
-                    <a class="quick_access_button" href="#novas"><i>Novas</i></a>
-                    <a class="quick_access_button" href="#directiva"><i>Directiva</i></a>
+                    <h2>Menú</h2>
+                    <button class="side_menu_button" onclick="showContent(0)"><i>A comunidade</i></button>
+                    <button class="side_menu_button" onclick="showContent(1)"><i>Novas</i></button>
+                    <button class="side_menu_button" onclick="showContent(2)"><i>Directiva</i></button>
+                    <script>
+                        function showContent(index) {
+                            let comunidade = document.getElementById("comunidade");
+                            let novas = document.getElementById("novas");
+                            let directiva = document.getElementById("directiva");
+
+                            comunidade.style.display = "none";
+                            novas.style.display = "none";
+                            directiva.style.display = "none";
+
+                            switch (index){
+                                case 0:
+                                    comunidade.style.display = "block";
+                                    break;
+                                case 1:
+                                    novas.style.display = "block";
+                                    break;
+                                case 2:
+                                    directiva.style.display = "block";
+                                    break;
+                                default:
+                                    comunidade.style.display = "block";
+                                    break;
+                            }
+                        }
+                    </script>
                 </div>
             </div>
 
             <div class="content_center_to_right">
-                <div class="item_center">
-                    <h1 id="comunidade">A Comunidade de Montes</h1>
+                <div id="comunidade" class="item_center">
+                    <h1>A Comunidade de Montes</h1>
                     <label>
                         [En desenvolvemento ...]
                     </label>
                 </div>
 
-                <div class="item_center">
-                    <h2 id="novas">Novas da Comunidade de Montes</h2>
+                <div id="novas" class="item_center">
+                    <h2>Novas da Comunidade de Montes</h2>
                     <table class="output"></table>
                     <script src="../scripts/spreadsheet_montes.js"></script>
                 </div>
 
-                <div class="item_center">
-                    <h2 id="directiva">Directiva</h2>
+                <div id="directiva" class="item_center">
+                    <h2>Directiva</h2>
                     <div style="text-align: center">
                         <div class="member_block">
                             <h4>Presidente<br/>Integrante 1</h4>

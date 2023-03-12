@@ -39,28 +39,53 @@
         <div class="body">
             <div class="content_left">
                 <div class="item_left">
-                    <h2>Acceso rápido</h2>
-                    <a class="quick_access_button" href="#comunidade"><i>A comunidade</i></a>
-                    <a class="quick_access_button" href="#novas"><i>Novas</i></a>
-                    <a class="quick_access_button" href="#directiva"><i>Directiva</i></a>
+                    <h2>Menú</h2>
+                    <button class="side_menu_button" onclick="showContent(0)"><i>A comunidade</i></button>
+                    <button class="side_menu_button" onclick="showContent(1)"><i>Novas</i></button>
+                    <button class="side_menu_button" onclick="showContent(2)"><i>Directiva</i></button>
+                    <script>
+                        function showContent(index) {
+                            let comunidade = document.getElementById("comunidade");
+                            let novas = document.getElementById("novas");
+                            let directiva = document.getElementById("directiva");
+
+                            comunidade.style.display = "none";
+                            novas.style.display = "none";
+                            directiva.style.display = "none";
+
+                            switch (index){
+                                case 0:
+                                    comunidade.style.display = "block";
+                                    break;
+                                case 1:
+                                    novas.style.display = "block";
+                                    break;
+                                case 2:
+                                    directiva.style.display = "block";
+                                    break;
+                                default:
+                                    comunidade.style.display = "block";
+                                    break;
+                            }
+                        }
+                    </script>
                 </div>
             </div>
 
             <div class="content_center_to_right">
-                <div class="item_center">
-                    <h1 id="comunidade">A Comunidade Enerxética</h1>
+                <div id="comunidade" class="item_center">
+                    <h1>A Comunidade Enerxética</h1>
                     <label>
                         <i>CLER: Comunidade Local de Enerxías Renovables de Buchabade.</i>
                     </label>
                     <h3>De que vai isto da CLER de Buchabade?</h3>
                     <label>
-                        Estamos nos albores dun novo tempo, alomenos en canto ao tema enerxético.
-                        As reservas de gas e petróleo están lonxe e cada día custa mais extraer estos combustibles:
-                        escasean, provocan conflictos e guerras polo seu dominio, están moi concentrados na xeografía do
-                        planeta e, polo tanto, o dominio económico sobre eles.
-                        O planeta está sofrendo un cambio climático acelerado, o CO2 que botamos á atmosfera cada vez
-                        que queimamos gás e derivados do petróleo fai unha capa arredor do planeta que altera o
-                        equilibrio térmico da Terra. Estamos aquecendo, con moitas consecuencias.
+                        Estamos nos albores dun novo tempo en canto ao tema enerxético.
+                        As reservas de gas e petróleo están lonxe e cada día custa máis extraer estes combustibles:
+                        escasean, provocan conflictos e guerras polo seu dominio, e están moi concentrados na xeografía do
+                        planeta.
+                        O planeta está sofrendo un cambio climático acelerado a raíz de do CO2 que botamos á atmosfera cada vez
+                        que queimamos gás e derivados do petróleo.
                         A CLER de Buchabade nace neste contexto xeral, o aveiro de disposicións da Comunidade Europea
                         que permiten e fomentan un novo paradigma. Cidadáns, pequenas e grandes empresas, concellos,
                         póñanse a producir enerxías renovabeis xa!
@@ -74,74 +99,73 @@
                         apropiación dos recursos pola veciñanza.
                         Axiña nos puxemos un grupo promotor a traballar: asembleas informativas, estudios técnicos,
                         colaboración con moitas entidades... Pero o máis importante foi ter unha Comunidade de Montes
-                        unida, con confianza na súa directiva e solvente económicamente, sen isto todo sería mais
-                        difícil.
+                        unida, con confianza na súa directiva e solvente económicamente.
                         Tan só uns seis meses despois e cuns 700&euro; de gasto, tiñamos montado o corpo xurídico para
                         poder falar da CLER de Buchabade.
                     </label>
                     <h3>Quenes somos agora?</h3>
                     <label>
                         Somos unha cooperativa de consumo, con escritura pública, estatutos, e unha rectora.
-                        Os socios son 80 persoas físicas, case todas comuneiras de montes, Tres PYMES, a propia CMVMC e
+                        Os socios son <b>80 persoas físicas</b>, case todas comuneiras de montes, tres PYMES, a propia CMVMC e
                         tamén a Comunidade de Usuarios de Augas De Buchabade.
                     </label>
                     <h3>Que queremos facer?</h3>
                     <label>
                         Noso obxetivo a curto prazo é dotarnos dun autoconsumo compartido eléctrico que acade o óptimo
-                        para cada un dos socios da Cooperativa e así rebaixar o máximo que poidamos con tecnoloxía
-                        fotovoltaica as facturas da luz de cada un destes membros. Para elo temos dous proxectos
+                        para cada un dos socios da Cooperativa e así rebaixar o máximo que poidamos con <b>tecnoloxía
+                        fotovoltaica</b> as facturas da luz de cada un destes membros. Para elo temos dous proxectos
                         diferenciados: un na cuberta do Centro Hípico Atlántico, e outro na nave da Serra de Pedra
-                        Granitos Santa Ana. No primeiro 100 kw e, na serra aínda sen ultimar, pero aproximadamente uns
-                        45 KW. A longo prazo gostaríamos diversificar a producción con outras tecnoloxías coma
-                        minieólica ou minihidráulica e unha xestión común da leña.
+                        Granitos Santa Ana. No primeiro 100 kw e na serra aproximadamente uns 45 KW. A longo prazo
+                        gostaríamos diversificar a producción con outras tecnoloxías coma minieólica ou minihidráulica e
+                        unha xestión común da leña.
                     </label>
+                    <br/><br/>
+                    <div class="item_center, item_widescreen">
+                        <div class="slick-carousel-widescreen">
+                            <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="item_center, item_mobile">
+                        <div class="slick-carousel-mobile">
+                            <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
+                            <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function(){
+                            $('.slick-carousel-widescreen').slick({
+                                autoplay: true,
+                                autoplaySpeed: 3000,
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                arrows: false,
+                            });
+                        });
+                        $(document).ready(function(){
+                            $('.slick-carousel-mobile').slick({
+                                autoplay: true,
+                                autoplaySpeed: 3000,
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                arrows: false,
+                            });
+                        });
+                    </script>
                 </div>
 
-                <div class="item_center, item_widescreen">
-                    <div class="slick-carousel-widescreen">
-                        <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="item_center, item_mobile">
-                    <div class="slick-carousel-mobile">
-                        <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
-                        <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
-                    </div>
-                </div>
-                <script>
-                    $(document).ready(function(){
-                        $('.slick-carousel-widescreen').slick({
-                            autoplay: true,
-                            autoplaySpeed: 3000,
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        });
-                    });
-                    $(document).ready(function(){
-                        $('.slick-carousel-mobile').slick({
-                            autoplay: true,
-                            autoplaySpeed: 3000,
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        });
-                    });
-                </script>
-
-                <div class="item_center">
-                    <h2 id="novas">Novas da Comunidade de Enerxética</h2>
+                <div id="novas" class="item_center">
+                    <h2>Novas da Comunidade de Enerxética</h2>
                     <table class="output"></table>
                     <script src="../scripts/spreadsheet_energetica.js"></script>
                 </div>
 
-                <div class="item_center">
-                    <h2 id="directiva">Directiva</h2>
+                <div id="directiva" class="item_center">
+                    <h2>Directiva</h2>
                     <div style="text-align: center">
                         <div class="member_block">
                             <h4>Presidente<br/>Integrante 1</h4>
