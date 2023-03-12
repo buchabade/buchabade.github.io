@@ -12,6 +12,10 @@
     <title>Comunidade enerxética / Buchabade</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -45,9 +49,89 @@
                 <div class="item_center">
                     <h1 id="comunidade">A Comunidade Enerxética</h1>
                     <label>
-                        [En desenvolvemento ...]
+                        <i>CLER: Comunidade Local de Enerxías Renovables de Buchabade.</i>
+                    </label>
+                    <h3>De que vai isto da CLER de Buchabade?</h3>
+                    <label>
+                        Estamos nos albores dun novo tempo, alomenos en canto ao tema enerxético.
+                        As reservas de gas e petróleo están lonxe e cada día custa mais extraer estos combustibles:
+                        escasean, provocan conflictos e guerras polo seu dominio, están moi concentrados na xeografía do
+                        planeta e, polo tanto, o dominio económico sobre eles.
+                        O planeta está sofrendo un cambio climático acelerado, o CO2 que botamos á atmosfera cada vez
+                        que queimamos gás e derivados do petróleo fai unha capa arredor do planeta que altera o
+                        equilibrio térmico da Terra. Estamos aquecendo, con moitas consecuencias.
+                        A CLER de Buchabade nace neste contexto xeral, o aveiro de disposicións da Comunidade Europea
+                        que permiten e fomentan un novo paradigma. Cidadáns, pequenas e grandes empresas, concellos,
+                        póñanse a producir enerxías renovabeis xa!
+                    </label>
+                    <h3>Como xorde a comunidade enerxética?</h3>
+                    <label>
+                        A idea xorde nunhas charlas divulgativas no marco da invasión de proxectos eólicos e das súa
+                        infraestructura asociada.
+                        Pareceunos unha alternativa máis xusta, equitativa e de menor impacto para a producción de
+                        enerxía renovable. Tamén moi acorde coa cultura común dos veciños e coa tradición  de
+                        apropiación dos recursos pola veciñanza.
+                        Axiña nos puxemos un grupo promotor a traballar: asembleas informativas, estudios técnicos,
+                        colaboración con moitas entidades... Pero o máis importante foi ter unha Comunidade de Montes
+                        unida, con confianza na súa directiva e solvente económicamente, sen isto todo sería mais
+                        difícil.
+                        Tan só uns seis meses despois e cuns 700&euro; de gasto, tiñamos montado o corpo xurídico para
+                        poder falar da CLER de Buchabade.
+                    </label>
+                    <h3>Quenes somos agora?</h3>
+                    <label>
+                        Somos unha cooperativa de consumo, con escritura pública, estatutos, e unha rectora.
+                        Os socios son 80 persoas físicas, case todas comuneiras de montes, Tres PYMES, a propia CMVMC e
+                        tamén a Comunidade de Usuarios de Augas De Buchabade.
+                    </label>
+                    <h3>Que queremos facer?</h3>
+                    <label>
+                        Noso obxetivo a curto prazo é dotarnos dun autoconsumo compartido eléctrico que acade o óptimo
+                        para cada un dos socios da Cooperativa e así rebaixar o máximo que poidamos con tecnoloxía
+                        fotovoltaica as facturas da luz de cada un destes membros. Para elo temos dous proxectos
+                        diferenciados: un na cuberta do Centro Hípico Atlántico, e outro na nave da Serra de Pedra
+                        Granitos Santa Ana. No primeiro 100 kw e, na serra aínda sen ultimar, pero aproximadamente uns
+                        45 KW. A longo prazo gostaríamos diversificar a producción con outras tecnoloxías coma
+                        minieólica ou minihidráulica e unha xestión común da leña.
                     </label>
                 </div>
+
+                <div class="item_center, item_widescreen">
+                    <div class="slick-carousel-widescreen">
+                        <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="item_center, item_mobile">
+                    <div class="slick-carousel-mobile">
+                        <div><img style="width: 125%" src="../assets/energetica/mapa_cler.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/recorte_1.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/recorte_2.png" alt=""></div>
+                        <div><img style="width: 125%" src="../assets/energetica/cartel_cler.png" alt=""></div>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('.slick-carousel-widescreen').slick({
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        });
+                    });
+                    $(document).ready(function(){
+                        $('.slick-carousel-mobile').slick({
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        });
+                    });
+                </script>
 
                 <div class="item_center">
                     <h2 id="novas">Novas da Comunidade de Enerxética</h2>
