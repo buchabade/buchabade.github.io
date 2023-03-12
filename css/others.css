@@ -37,7 +37,7 @@
 @media (max-width: 920px) {
 
     .member_block {
-        width: 31%;
+        max-width: 30%;
     }
 
 }
