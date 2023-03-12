@@ -62,49 +62,19 @@ body {
     margin-left: auto;
 }
 
-.item_mobile {
-    display: none;
+.content_flex {
+    display: flex;
+    margin-bottom: 35px;
 }
 
-.item_widescreen{
-    display: block;
+.item_flex_left {
+    width: 50%;
+    margin-right: 10px;
 }
 
-/* TODO: REVIEW */
-.content_aviso_text {
-    margin-left: 0;
-    margin-right: 30px;
-    width: 47.5%;
-    text-align: justify;
-}
-
-/* TODO: REVIEW */
-.content_aviso_image {
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 45%;
-    text-align: right;
-}
-
-/* TODO: REVIEW */
-.content_communities {
+.item_flex_right {
+    width: 50%;
     margin-left: 10px;
-    margin-right: 50px;
-    width: 75%;
-    text-align: justify;
-}
-
-/* TODO: REVIEW */
-.business_mobile{display: none}
-
-/* TODO: REVIEW */
-.center_content{
-    width: 55%;
-}
-
-/* TODO: REVIEW */
-.center_separator{
-    width: 22.5%;
 }
 
 @media (max-width: 920px) {
@@ -137,55 +107,18 @@ body {
         display: none;
     }
 
-    .item_mobile {
+    .content_flex {
         display: block;
-        margin-bottom: 35px;
     }
 
-    .item_widescreen {
-        display: none;
-    }
-
-    /* TODO: REVIEW */
-    .content_aviso_text{
-        margin-left: 10px;
-        margin-right: 10px;
+    .item_flex_left {
         width: 100%;
-        text-align: justify;
+        margin-right: 0;
     }
 
-    /* TODO: REVIEW */
-    .content_communities{
-        margin-left: 10px;
-        margin-right: 10px;
+    .item_flex_right {
         width: 100%;
-        text-align: justify;
-    }
-
-    /* TODO: REVIEW */
-    .content_aviso_image {
-        display: none;
-    }
-
-    /* TODO: REVIEW */
-    .business{display: none}
-
-    /* TODO: REVIEW */
-    .business_mobile{display: block}
-
-    /* TODO: REVIEW */
-    .center_content{
-        width: 55%;
-    }
-
-    /* TODO: REVIEW */
-    .center_separator{
-        display: none;
-    }
-
-    /* TODO: REVIEW */
-    .center_content{
-        width: 100%;
+        margin-left: 0;
     }
 
 }

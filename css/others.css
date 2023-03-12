@@ -29,47 +29,10 @@
     width: 100%;
 }
 
-
-.mobile_sidebar_item {
-    display: none;
-}
-
-.business_image{
-    width: 320px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-.business_title{
-    text-align: left;
-}
-
 @media (max-width: 920px) {
 
     .member_block {
         width: 31%;
-    }
-
-
-
-
-
-
-
-    .mobile_sidebar_item {
-        display: block;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .business_image{
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .business_title{
-        text-align: center;
     }
 
 }
