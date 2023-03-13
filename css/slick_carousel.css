@@ -1,11 +1,39 @@
 .slick-carousel-widescreen {
     width: 100%;
     margin: 0 auto;
-    background-color: #f2f2f2;
 }
 
 .slick-carousel-mobile {
     width: 100%;
     margin: 0 auto;
-    background-color: #f2f2f2;
+}
+
+.item_slick_carousel{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.slick-prev {
+    left: 0;
+    color: #A3B18A;
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slick-next {
+    right: 0;
+    color: #A3B18A;
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #3A5A40;
 }
