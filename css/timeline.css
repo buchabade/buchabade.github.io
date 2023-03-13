@@ -17,21 +17,21 @@
 .timeline::after {
     content: '';
     position: absolute;
-    width: 2px;
+    width: 1px;
     background-color: #3A5A40;
     top: 24px;
     bottom: 0;
-    left: 31px;
+    left: 12px;
     margin-left: 0;
+    margin-right: 0;
 }
 
 /* Container around content */
 .timeline-container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 22px;
+    padding-right: 0;
     position: relative;
-    background-color: inherit;
     margin-bottom: 20px;
 }
 
@@ -41,21 +41,35 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    right: -10px;
     top: 9px;
     background-color: #3A5A40;
-    border: 1px solid #3A5A40;
     border-radius: 50%;
     z-index: 1;
 }
 
 /* Make sure all circles are at the same spot */
 .left::after {
-    left: 24px;
+    left: 5px;
 }
 
 /* The actual content */
 .timeline-content {
-    padding: 0 15px 10px 15px;
+    padding: 0 10px 10px 10px;
     position: relative;
+}
+
+@media (max-width: 920px) {
+
+    /* The circles on the timeline */
+    .timeline-container::after {
+        width: 12px;
+        height: 12px;
+        top: 12px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after {
+        left: 7px;
+    }
+
 }
