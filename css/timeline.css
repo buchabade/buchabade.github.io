@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-.timeline-header{
-    margin-top: 0;
-    margin-bottom: 5px;
+.timeline-date{
+    position: relative;
+    left: -106px;
+    top: 6px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -24,6 +25,7 @@
     left: 12px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 10px;
 }
 
 /* Container around content */
@@ -32,7 +34,6 @@
     padding-left: 22px;
     padding-right: 0;
     position: relative;
-    margin-bottom: 20px;
 }
 
 /* The circles on the timeline */
@@ -54,11 +55,31 @@
 
 /* The actual content */
 .timeline-content {
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 0 10px;
+    margin-bottom: -10px;
     position: relative;
 }
 
+.timeline-content-item{
+    position: relative;
+    top: -42px;
+}
+
+.timeline-header{
+    text-align: left;
+}
+
 @media (max-width: 920px) {
+
+    .timeline-date{
+        position: relative;
+        left: 0;
+    }
+
+    .timeline-content-item{
+        position: relative;
+        top: -7px;
+    }
 
     /* The circles on the timeline */
     .timeline-container::after {
