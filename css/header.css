@@ -1,5 +1,5 @@
 /* Needed to fill all the space between header and footer */
-header{ min-height:40px; }
+header{ min-height: 0; }
 
 header {
     overflow: hidden;
@@ -60,6 +60,43 @@ header a.header_title_active {
     font-size: 25px;
 }
 
+.icon_container {
+    width: 32px;
+    height: 32px;
+    margin-top: 17px;
+    margin-left: 15px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #588157;
+}
+
+.icon{
+    margin: 5px 4px 5px 4px;
+    transition: 0.4s ease-out;
+    rotate: 90deg;
+}
+
+.bar {
+    width: 22px;
+    height: 4px;
+    background-color: #588157;
+    margin: 4px 0;
+}
+
+.rotate .icon {
+    transform: rotate(-90deg);
+}
+
+#foldingHeader {
+    max-height: 300px;
+    transition: max-height 0.4s ease-out;
+}
+
+#foldingHeader.folded {
+    max-height: 0;
+}
+
 @media (max-width: 920px) {
 
     header a.header_title{
@@ -72,7 +109,7 @@ header a.header_title_active {
 
     header a {
         font-size: 14px;
-        width: 50%;
+        width: 100%;
     }
 
 }

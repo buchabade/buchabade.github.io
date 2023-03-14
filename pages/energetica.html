@@ -18,12 +18,27 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
 
-<body>
+<script src="../scripts/header_management.js"></script>
+
+<body onload="loadHeader()">
     <div id="header">
         <header>
-            <a class="header_title" href="../index.html">BUCHABADE</a>
+            <div style="display: flex">
+                <div style="width: min-content">
+                    <div id="iconButton" class="icon_container" onclick="toggleHeader()">
+                        <div class="icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: max-content">
+                    <a href="../index.html" class="header_title">BUCHABADE</a>
+                </div>
+            </div>
         </header>
-        <header>
+        <header id="foldingHeader">
             <a href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
             <a href="energetica.html" class="active">C. enerxética</a>
             <a href="montes.html">C. de montes</a>
