@@ -4,7 +4,7 @@ header{ min-height: 0; }
 header {
     overflow: hidden;
     background-color: #344E41;
-    text-align: center;
+    align-items: center;
 }
 
 header a {
