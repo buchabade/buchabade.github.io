@@ -110,6 +110,7 @@ header a.header_title_active {
     header a {
         font-size: 14px;
         width: 100%;
+        text-align: left;
     }
 
 }
