@@ -5,7 +5,7 @@
 .timeline-date{
     position: relative;
     left: -106px;
-    top: 6px;
+    top: 7px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -46,11 +46,12 @@
     background-color: #3A5A40;
     border-radius: 50%;
     z-index: 1;
+    border: 2px solid #DAD7CD;
 }
 
 /* Make sure all circles are at the same spot */
 .left::after {
-    left: 5px;
+    left: 3px;
 }
 
 /* The actual content */
@@ -62,7 +63,7 @@
 
 .timeline-content-item{
     position: relative;
-    top: -42px;
+    top: -40px;
 }
 
 .timeline-header{
@@ -91,7 +92,7 @@
 
     /* Make sure all circles are at the same spot */
     .left::after {
-        left: 7px;
+        left: 5px;
     }
 
 }
