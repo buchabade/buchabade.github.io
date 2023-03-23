@@ -1,2 +1,3 @@
+Animaciones
 Comprimir imágenes
 Aplicar fuente
