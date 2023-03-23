@@ -24,6 +24,10 @@ footer p {
     margin-left: 1rem;
 }
 
+footer i {
+    color: #A3B18A;
+}
+
 @media (max-width: 799px) {
 
     footer{

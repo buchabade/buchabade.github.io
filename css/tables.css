@@ -23,13 +23,3 @@ table th {
 table tr {
     text-align: center;
 }
-
-@media (max-width: 920px) {
-
-    table{
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-}

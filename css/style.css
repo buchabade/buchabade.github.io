@@ -6,7 +6,7 @@
 @import "slick_carousel.css";
 @import "timeline.css";
 
-/* PROJECT PALETTE: #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
+/* PROJECT PALETTE (dark<->light): #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -45,15 +45,24 @@ article{
     width: 50%;
 }
 
-.flex-item .left{
+.flex-item-aviso-text {
+    width: 66%;
+}
+
+.flex-item-aviso-image {
+    width: 33%;
+}
+
+
+.left{
     padding-right: 0.5rem;
 }
 
-.flex-item .right{
+.right{
     padding-left: 0.5rem;
 }
 
-.flex-item .image{
+.image{
     padding-top: 1.75rem;
 }
 
@@ -73,13 +82,27 @@ label, p, a, i {
 
 h1 {
     font-size: 2.5rem;
+    text-align: left;
+}
+
+h1 a {
+    font-size: 2.5rem;
 }
 
 h2 {
     font-size: 1.75rem;
+    text-align: left;
+}
+
+h2 a {
+    font-size: 1.75rem;
 }
 
 h3 {
+    font-size: 1.25rem;
+}
+
+h3 a {
     font-size: 1.25rem;
 }
 
@@ -99,6 +122,10 @@ hr {
     .flex-item{
         width: 100%;
         padding: 0;
+    }
+
+    .flex-item-aviso-text, .flex-item-aviso-image  {
+        width: 100%;
     }
 
     .flex-item .left{
