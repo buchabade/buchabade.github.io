@@ -10,168 +10,135 @@
     <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Aguas, Augas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade de augas / Buchabade</title>
-
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<script src="../scripts/header_management.js"></script>
 
-<body onload="loadHeader()">
-    <div id="header">
-        <header>
-            <div style="display: flex">
-                <div style="width: min-content">
-                    <div id="iconButton" class="icon_container" onclick="toggleHeader()">
-                        <div class="icon">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: max-content">
-                    <a href="../index.html" class="header_title">BUCHABADE</a>
-                </div>
-            </div>
-        </header>
-        <header id="foldingHeader">
-            <a href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
-            <a href="energetica.html">C. enerxética</a>
-            <a href="montes.html">C. de montes</a>
-            <a href="aguas.html" class="active">C. de augas</a>
-            <a href="negocios.html">Negocios locais</a>
-            <a href="acontecementos.html">Acontecementos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </header>
+<body>
+
+    <header>
+        <div class="navigation-button" onclick="toggleNavigation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="../index.html">BUCHABADE</a>
+    </header>
+    <div id="navigation" style="display: none">
+        <script src="../scripts/navigation.js"></script>
+        <a href="../pages/novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
+        <a href="../pages/energetica.html">C.&nbsp;enerxética</a>
+        <a href="../pages/montes.html">C.&nbsp;de&nbsp;montes</a>
+        <a href="../pages/aguas.html">C.&nbsp;de&nbsp;augas</a>
+        <a href="../pages/negocios.html">Negocios&nbsp;locais</a>
+        <a href="../pages/acontecementos.html">Acontecementos</a>
+        <a href="../pages/galeria.html">Galería</a>
     </div>
 
-    <article id="body">
-        <div class="body">
-            <div class="content_left">
-                <div class="item_left">
-                    <h2>Menú</h2>
-                    <button class="side_menu_button" onclick="showContent(0)"><i>A comunidade</i></button>
-                    <button class="side_menu_button" onclick="showContent(1)"><i>Novas</i></button>
-                    <button class="side_menu_button" onclick="showContent(2)"><i>Directiva</i></button>
-                    <script>
-                        function showContent(index) {
-                            let comunidade = document.getElementById("comunidade");
-                            let novas = document.getElementById("novas");
-                            let directiva = document.getElementById("directiva");
+    <article>
 
-                            comunidade.style.display = "none";
-                            novas.style.display = "none";
-                            directiva.style.display = "none";
+        <div class="title">
+            <h1>A Comunidade de Augas</h1>
+        </div>
 
-                            switch (index){
-                                case 0:
-                                    comunidade.style.display = "block";
-                                    break;
-                                case 1:
-                                    novas.style.display = "block";
-                                    break;
-                                case 2:
-                                    directiva.style.display = "block";
-                                    break;
-                                default:
-                                    comunidade.style.display = "block";
-                                    break;
-                            }
-                        }
-                    </script>
+        <div id="augas-novas" class="section" style="animation: fadein 0.4s">
+            <h2>Novas</h2>
+            <table class="output"></table>
+            <script src="../scripts/spreadsheet_aguas.js"></script>
+        </div>
+        <hr>
+        <div id="augas-intro" class="section" style="animation: fadein 0.8s">
+
+            <h3>O traballo dos nosos devanceiros</h3>
+            <p>
+                Pepe Serrapio foi un dos artífices mais activos para que Buchabade levara auga as casas no ano
+                75. Tamén relata que toda a veciñanza apoiou económicamente e con diñeiro captar dous
+                manantiais, facer un depósito e as distribucións até as casas, quen sabe que traballiños
+                pasaron!
+                A dia de hoxe seu traballo segue sendo útil, os manatiais e o depósito seguen funcionando, o
+                noso agradecemento nunca será dabondo.
+            </p>
+            <h3>Unha nova xestión da auga</h3>
+            <p>
+                Durante moitos anos a auga continuou fluindo ás casas. Dos anos 2010 a 2012 renovouse toda a
+                distribución de baixa (depósito-casas) sustituindo as vellas tuberías de PVC polas de PE negro.
+                A inversión rondou os 40000&euro;, satisfeito con fondos cumunais.
+                No ano 2017, nun escenario de seca extraordinaria, pretenderon facer un transvasamento de auga
+                dende o Río Verdugo a Vigo, isto fixo que no medio da resposta social a esta obra xorderan as
+                preguntas: como xestionamos a auga nas traídas locais? estamos preparados para as secas?
+                somos eficientes?<br>
+                A resposta a esta pregunta veu dunha viaxe a Tomiño co Presidente de Augas Miguel Calviño. Alí
+                vimos cara onde tiñamos que ir e cales eran os novos deberes que había que facer na nosa traída.
+                Asociámonos a COXAPO (agrupa a máis de 180 Traídas veciñais), modernizamos as instalacións dos
+                depósitos, filtramos a auga que ven dos manantiais, dotámonos de clorador, temos información
+                vía satélite a tempo real de niveis do depósito, do consumo minuto a minuto, do cloro, da
+                circulación de xente, e axeitámonos á normativa con moitos mais detalles. Invertíronse nesta
+                andaina máis de 40000&euro;, e seguimos...
+            </p>
+            <h3>E agora que toca?</h3>
+            <p>
+                O que se fixo foi moito pero temos que seguir adaptándonos aos novos escenarios. O quecemento
+                global e a impredicibilidade climatolóxica marcan a folla de ruta. Todo indica que as secas van
+                ser máis persistentes e que as normativas van ser máis restrictivas no uso da auga. Adaptarnos
+                a este escenario parece o máis acaído.<br>
+                Neste sentido xa temos en marcha o proxecto "Pozo". A oferta de auga até hoxe depende dos
+                manantiais superficiais do monte. A grande vantaxe deles é que non precisan bombeo e teñen boa
+                calidade de potabilidade. A debilidade é que secan antes que as augas profundas. A estratexia
+                de facer un pozo non pode ser para aumentar o consumo de auga senon para aumentar a seguridade
+                en caso de seca e disminuir a presión sobre os acuíferos do monte.<br>
+                Os seguintes proxectos, máis a medio plazo e dependentes da financiación serían mellorar a
+                xestión dotándonos de contadores intelixentes nas casas que permitan controlar as fugas e os
+                excesos de consumo en tempo real. Tamén disminuir o impacto sobre os acuíferos superficiais e
+                garantizar un caudal ecolóxico nos mesmos ademáis dunha xestión progresiva de uso nos
+                manantiais máis altos que permita que sigan alimentando aos inferiores.
+            </p>
+            <!-- TODO: GALLERY -->
+
+        </div>
+        <hr>
+        <div id="augas-directiva" class="section" style="animation: fadein 1.2s">
+            <h2>Directiva</h2>
+            <div style="width: 100%; text-align: center; display: flex">
+                <div class="community-person">
+                    <h4>Presidente</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
-            </div>
-
-            <div class="content_center">
-                <div id="comunidade" class="item_center">
-                    <h1>A Comunidade de Augas</h1>
-                    <h3>O traballo dos nosos devanceiros</h3>
-                    <label>
-                        Pepe Serrapio foi un dos artífices mais activos para que Buchabade levara auga as casas no ano
-                        75. Tamén relata que toda a veciñanza apoiou económicamente e con diñeiro captar dous
-                        manantiais, facer un depósito e as distribucións até as casas, quen sabe que traballiños
-                        pasaron!
-                        A dia de hoxe seu traballo segue sendo útil, os manatiais e o depósito seguen funcionando, o
-                        noso agradecemento nunca será dabondo.
-                    </label>
-                    <h3>Unha nova xestión da auga</h3>
-                    <label>
-                        Durante moitos anos a auga continuou fluindo ás casas. Dos anos 2010 a 2012 renovouse toda a
-                        distribución de baixa (depósito-casas) sustituindo as vellas tuberías de PVC polas de PE negro.
-                        A inversión rondou os 40000&euro;, satisfeito con fondos cumunais.
-                        No ano 2017, nun escenario de seca extraordinaria, pretenderon facer un transvasamento de auga
-                        dende o Río Verdugo a Vigo, isto fixo que no medio da resposta social a esta obra xorderan as
-                        preguntas: como xestionamos a auga nas traídas locais? estamos preparados para as secas?
-                        somos eficientes?<br>
-                        A resposta a esta pregunta veu dunha viaxe a Tomiño co Presidente de Augas Miguel Calviño. Alí
-                        vimos cara onde tiñamos que ir e cales eran os novos deberes que había que facer na nosa traída.
-                        Asociámonos a COXAPO (agrupa a máis de 180 Traídas veciñais), modernizamos as instalacións dos
-                        depósitos, filtramos a auga que ven dos manantiais, dotámonos de clorador, temos información
-                        vía satélite a tempo real de niveis do depósito, do consumo minuto a minuto, do cloro, da
-                        circulación de xente, e axeitámonos á normativa con moitos mais detalles. Invertíronse nesta
-                        andaina máis de 40000&euro;, e seguimos...
-                    </label>
-                    <h3>E agora que toca?</h3>
-                    <label>
-                        O que se fixo foi moito pero temos que seguir adaptándonos aos novos escenarios. O quecemento
-                        global e a impredicibilidade climatolóxica marcan a folla de ruta. Todo indica que as secas van
-                        ser máis persistentes e que as normativas van ser máis restrictivas no uso da auga. Adaptarnos
-                        a este escenario parece o máis acaído.<br>
-                        Neste sentido xa temos en marcha o proxecto "Pozo". A oferta de auga até hoxe depende dos
-                        manantiais superficiais do monte. A grande vantaxe deles é que non precisan bombeo e teñen boa
-                        calidade de potabilidade. A debilidade é que secan antes que as augas profundas. A estratexia
-                        de facer un pozo non pode ser para aumentar o consumo de auga senon para aumentar a seguridade
-                        en caso de seca e disminuir a presión sobre os acuíferos do monte.<br>
-                        Os seguintes proxectos, máis a medio plazo e dependentes da financiación serían mellorar a
-                        xestión dotándonos de contadores intelixentes nas casas que permitan controlar as fugas e os
-                        excesos de consumo en tempo real. Tamén disminuir o impacto sobre os acuíferos superficiais e
-                        garantizar un caudal ecolóxico nos mesmos ademáis dunha xestión progresiva de uso nos
-                        manantiais máis altos que permita que sigan alimentando aos inferiores.
-                    </label>
-
+                <div class="community-person">
+                    <h4>Vicepresidente</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
-
-                <div id="novas" class="item_center">
-                    <h2>Novas da Comunidade de Augas</h2>
-                    <table class="output"></table>
-                    <script src="../scripts/spreadsheet_aguas.js"></script>
-                </div>
-
-                <div id="directiva" class="item_center">
-                    <h2>Directiva</h2>
-                    <div style="text-align: center">
-                        <div class="member_block">
-                            <h4>Presidente<br/>Integrante 1</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                        <div class="member_block">
-                            <h4>Vicepresidente<br/>Integrante 2</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                        <div class="member_block">
-                            <h4>Secretario<br/>Integrante 3</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content_right">
-                <div class="item_right">
-                    <img style="width: 100%" src="../assets/aguas/intro_augas.jpg" alt="">
+                <div class="community-person">
+                    <h4>Secretario</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
             </div>
         </div>
-    </article>
 
-    <div id="footer">
         <footer>
-            <div style="padding-top: 10px">
-                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
-                <p>Comunidade de Buchabade</p>
+            <div class="contact-margin">
+                <h2>Contacto</h2>
+                <p><a href="mailto:comunidadeenerxeticabuchabade@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;comunidadeenerxeticabuchabade@gmail.com</a></p>
+                <p><a href="tel:+34---------"  target="_blank"><i class="fa fa-phone"></i>
+                    &nbsp;&nbsp;+34 --- --- ---</a></p>
+            </div>
+
+            <div>
+                <h2>Desenvolvemento web</h2>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+                <h2>Fotografía</h2>
+                <p><a href="https://instagram.com/manues.jpg" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Manuel Estévez Murado</a></p>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
             </div>
         </footer>
-    </div>
+
+    </article>
 </body>
 </html>

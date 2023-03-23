@@ -10,142 +10,116 @@
     <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Galería, Fotos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade de montes / Buchabade</title>
-
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="loadHeader()">
-    <div id="header">
-        <header>
-            <div style="display: flex">
-                <div style="width: min-content">
-                    <div id="iconButton" class="icon_container" onclick="toggleHeader()">
-                        <div class="icon">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: max-content">
-                    <a href="../index.html" class="header_title">BUCHABADE</a>
-                </div>
-            </div>
-        </header>
-        <header id="foldingHeader">
-            <a href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
-            <a href="energetica.html">C. enerxética</a>
-            <a href="montes.html" class="active">C. de montes</a>
-            <a href="aguas.html">C. de augas</a>
-            <a href="negocios.html">Negocios locais</a>
-            <a href="acontecementos.html">Acontecementos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </header>
+<body>
+
+    <header>
+        <div class="navigation-button" onclick="toggleNavigation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="../index.html">BUCHABADE</a>
+    </header>
+    <div id="navigation" style="display: none">
+        <script src="../scripts/navigation.js"></script>
+        <a href="../pages/novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
+        <a href="../pages/energetica.html">C.&nbsp;enerxética</a>
+        <a href="../pages/montes.html">C.&nbsp;de&nbsp;montes</a>
+        <a href="../pages/aguas.html">C.&nbsp;de&nbsp;augas</a>
+        <a href="../pages/negocios.html">Negocios&nbsp;locais</a>
+        <a href="../pages/acontecementos.html">Acontecementos</a>
+        <a href="../pages/galeria.html">Galería</a>
     </div>
 
-    <script src="../scripts/header_management.js"></script>
+    <article>
 
-    <article id="body">
-        <div class="body">
-            <div class="content_left">
-                <div class="item_left">
-                    <h2>Menú</h2>
-                    <button class="side_menu_button" onclick="showContent(0)"><i>A comunidade</i></button>
-                    <button class="side_menu_button" onclick="showContent(1)"><i>Novas</i></button>
-                    <button class="side_menu_button" onclick="showContent(2)"><i>Directiva</i></button>
-                    <script>
-                        function showContent(index) {
-                            let comunidade = document.getElementById("comunidade");
-                            let novas = document.getElementById("novas");
-                            let directiva = document.getElementById("directiva");
+        <div class="title">
+            <h1>A Comunidade de Montes</h1>
+        </div>
 
-                            comunidade.style.display = "none";
-                            novas.style.display = "none";
-                            directiva.style.display = "none";
+        <div id="montes-novas" class="section" style="animation: fadein 0.4s">
+            <h2>Novas</h2>
+            <table class="output"></table>
+            <script src="../scripts/spreadsheet_montes.js"></script>
+        </div>
+        <hr>
+        <div id="montes-intro" class="section" style="animation: fadein 0.8s">
 
-                            switch (index){
-                                case 0:
-                                    comunidade.style.display = "block";
-                                    break;
-                                case 1:
-                                    novas.style.display = "block";
-                                    break;
-                                case 2:
-                                    directiva.style.display = "block";
-                                    break;
-                                default:
-                                    comunidade.style.display = "block";
-                                    break;
-                            }
-                        }
-                    </script>
+            <h3>O monte da veciñanza</h3>
+            <p>
+                O día 5 de Decembro de 1980 declarábase a devolución no Goberno Civil de Pontevedra do Monte
+                Veciñal aos seus lexítimos propietarios dende tempos inmemoriais:
+                <b>A veciñanza de Buchabade</b>.<br>
+                Despois de anos de usurpación do aveiro das leis franquistas, a veciñanza de toda Galicia
+                recibía de volta o que sempre fora seu. Anos de liortas, de veciños empobrecidos expulsados
+                dos pasteiros comunais, vixiados pola garda civil, reclutados nenas e nenos para repoboar o seu
+                monte con especies forestais e perdendo donde pacer o seu gando; aquí en Buchabade coma en
+                centos de parroquias de toda Galicia. Hai tantas historias desta época da posguerra coma
+                veciños había en Buchabade.
+            </p>
+            <h3>Estado actual</h3>
+            <p>
+                Hoxe o monte é da veciñanza, mais aínda temos testemuñas da repoboación forzosa que se fixo do
+                monte. Unhas decenas de sequoias, varias chamaecyparis, algúns piñeiros patula (de folla caída)
+                e que saibamos un alerce (larix decidua).<br>
+                Tamén temos un problema moi gordo de invasión de acacias, que igual que os anteriores, proveñen
+                das repoboacións dos anos 60.<br>
+                No noso monte a día de hoxe temos unhas 70-80 hectáreas conveniadas con ENCE a eucaliptos,
+                quedan outras 80 repartidas en diferentes usos: sobre 4Ha en cesión de superficie a tres
+                empresas, 1Ha de carballo americano de 18 anos, unhas 8-10Ha de rexenerado de piñeiro duns 16
+                anos... O resto, nas zonas altas, son monte baixo nas abas do coto do Inferno e dos Mouros.
+                Ademáis contamos cunha casa do Pobo, un campo da festa e tres Muíños restaurados.
+            </p>
+            <!-- TODO: GALLERY -->
+
+        </div>
+        <hr>
+        <div id="montes-directiva" class="section" style="animation: fadein 1.2s">
+            <h2>Directiva</h2>
+            <div style="width: 100%; text-align: center; display: flex">
+                <div class="community-person">
+                    <h4>Presidente</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
-            </div>
-
-            <div class="content_center_to_right">
-                <div id="comunidade" class="item_center">
-                    <h1>A Comunidade de Montes</h1>
-                    <label>
-                        O día 5 de Decembro de 1980 declarábase a devolución no Goberno Civil de Pontevedra do Monte
-                        Veciñal aos seus lexítimos propietarios dende tempos inmemoriais:
-                        <b>A veciñanza de Buchabade</b>.<br>
-                        Despois de anos de usurpación do aveiro das leis franquistas, a veciñanza de toda Galicia
-                        recibía de volta o que sempre fora seu. Anos de liortas, de veciños empobrecidos expulsados
-                        dos pasteiros comunais, vixiados pola garda civil, reclutados nenas e nenos para repoboar o seu
-                        monte con especies forestais e perdendo donde pacer o seu gando; aquí en Buchabade coma en
-                        centos de parroquias de toda Galicia. Hai tantas historias desta época da posguerra coma
-                        veciños había en Buchabade.
-                    </label>
-                    <h3>O monte da veciñanza</h3>
-                    <label>
-                        Hoxe o monte é da veciñanza, mais aínda temos testemuñas da repoboación forzosa que se fixo do
-                        monte. Unhas decenas de sequoias, varias chamaecyparis, algúns piñeiros patula (de folla caída)
-                        e que saibamos un alerce (larix decidua).<br>
-                        Tamén temos un problema moi gordo de invasión de acacias, que igual que os anteriores, proveñen
-                        das repoboacións dos anos 60.<br>
-                        No noso monte a día de hoxe temos unhas 70-80 hectáreas conveniadas con ENCE a eucaliptos,
-                        quedan outras 80 repartidas en diferentes usos: sobre 4Ha en cesión de superficie a tres
-                        empresas, 1Ha de carballo americano de 18 anos, unhas 8-10Ha de rexenerado de piñeiro duns 16
-                        anos... O resto, nas zonas altas, son monte baixo nas abas do coto do Inferno e dos Mouros.
-                        Ademáis contamos cunha casa do Pobo, un campo da festa e tres Muíños restaurados.
-                    </label>
+                <div class="community-person">
+                    <h4>Vicepresidente</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
-
-                <div id="novas" class="item_center">
-                    <h2>Novas da Comunidade de Montes</h2>
-                    <table class="output"></table>
-                    <script src="../scripts/spreadsheet_montes.js"></script>
-                </div>
-
-                <div id="directiva" class="item_center">
-                    <h2>Directiva</h2>
-                    <div style="text-align: center">
-                        <div class="member_block">
-                            <h4>Presidente<br/>Integrante 1</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                        <div class="member_block">
-                            <h4>Vicepresidente<br/>Integrante 2</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                        <div class="member_block">
-                            <h4>Secretario<br/>Integrante 3</h4>
-                            <img class="image" src="../assets/img3.jpg" alt="Integrante x">
-                        </div>
-                    </div>
+                <div class="community-person">
+                    <h4>Secretario</h4>
+                    <img style="width: 50%" src="../assets/img3.jpg" alt="Integrante x">
+                    <p><i>Nome Apelido1 Apelido2</i></p>
                 </div>
             </div>
         </div>
-    </article>
 
-    <div id="footer">
         <footer>
-            <div style="padding-top: 10px">
-                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
-                <p>Comunidade de Buchabade</p>
+            <div class="contact-margin">
+                <h2>Contacto</h2>
+                <p><a href="mailto:comunidadeenerxeticabuchabade@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;comunidadeenerxeticabuchabade@gmail.com</a></p>
+                <p><a href="tel:+34---------"  target="_blank"><i class="fa fa-phone"></i>
+                    &nbsp;&nbsp;+34 --- --- ---</a></p>
+            </div>
+
+            <div>
+                <h2>Desenvolvemento web</h2>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+                <h2>Fotografía</h2>
+                <p><a href="https://instagram.com/manues.jpg" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Manuel Estévez Murado</a></p>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
             </div>
         </footer>
-    </div>
+
+    </article>
 </body>
 </html>

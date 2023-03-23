@@ -34,7 +34,12 @@ article{
 
 .section{
     text-align: justify;
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 1.5rem 5rem 1.5rem;
+}
+
+.title{
+    text-align: left;
+    padding: 0 1.5rem;
 }
 
 .flex {
