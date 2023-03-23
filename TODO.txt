@@ -1,0 +1,2 @@
+Comprimir imágenes
+Aplicar fuente

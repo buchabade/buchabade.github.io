@@ -1,8 +1,37 @@
-/* Needed to fill all the space between header and footer */
-footer{ min-height:100px; display: block; }
-
 footer {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 0.75rem 5rem 0.75rem;
+    align-items: start;
     background-color: #3A5A40;
     color: white;
+}
+
+footer h2 {
+    font-weight: 300;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .contact-margin{
+    margin-right: 5rem;
+}
+
+footer p {
+    margin-left: 1rem;
+}
+
+@media (max-width: 799px) {
+
+    footer{
+        display: block;
+    }
+
+    footer .contact-margin{
+        margin-right: 0;
+    }
+
 }
