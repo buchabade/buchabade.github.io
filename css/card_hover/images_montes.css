@@ -1,0 +1,6 @@
+.card:nth-child(1):before {
+    background-image: url('../../assets/3_montes/intro_1.JPG');
+}
+.card:nth-child(2):before {
+    background-image: url('../../assets/3_montes/intro_2.JPG');
+}

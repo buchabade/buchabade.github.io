@@ -1,0 +1,9 @@
+.card:nth-child(1):before {
+    background-image: url('../../assets/4_augas/intro_1.JPG');
+}
+.card:nth-child(2):before {
+    background-image: url('../../assets/4_augas/intro_2.JPG');
+}
+.card:nth-child(3):before {
+    background-image: url('../../assets/4_augas/intro_3.JPG');
+}
