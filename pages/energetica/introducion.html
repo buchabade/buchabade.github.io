@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web da comunidade de Buchabade: Comunidade enerxética">
+    <meta name="author" content="Joaquín Solla Vázquez">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/logo_cler.png">
+    <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Enerxética, Energética">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade enerxética / Buchabade</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navigation-button" onclick="toggleNavigation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="../../index.html">BUCHABADE</a>
+    </header>
+    <div id="navigation" style="display: none">
+        <script src="../../scripts/navigation.js"></script>
+        <a href="../novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
+        <a href="../pages/energetica.html">C.&nbsp;enerxética</a>
+        <a href="../montes.html">C.&nbsp;de&nbsp;montes</a>
+        <a href="../aguas.html">C.&nbsp;de&nbsp;augas</a>
+        <a href="../negocios.html">Negocios&nbsp;locais</a>
+        <a href="../acontecementos.html">Acontecementos</a>
+        <a href="../galeria.html">Galería</a>
+    </div>
+
+    <article>
+
+        <div class="card-title">
+            <h1>A Comunidade Enerxética</h1>
+        </div>
+
+        <link rel="stylesheet" href="../../css/card_hover/energetica.css">
+        <div id="enerxetica-intro" class="section" style="animation: fadein 0.4s">
+            <main class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Coñece a CLER</h2>
+                        <p class="card-text"><b>C</b>omunidade <b>L</b>ocal de <b>E</b>nerxías <b>R</b>enovables.</p>
+                        <a href="info.html">
+                            <button class="btn">&plus;&nbsp;Saber máis</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">A nosa idea</h2>
+                        <p class="card-text">Como unha alternativa máis xusta para a producción de
+                            enerxía renovable.</p>
+                        <a href="info.html">
+                            <button class="btn">&plus;&nbsp;Saber máis</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Estado actual</h2>
+                        <p class="card-text">Somos 80 socios, 3 PYMES, a propia CMVMC e
+                            tamén a Comunidade de Usuarios de Augas De Buchabade.</p>
+                        <a href="info.html">
+                            <button class="btn">&plus;&nbsp;Saber máis</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Obxectivos e futuro</h2>
+                        <p class="card-text">O noso obxetivo a curto prazo é dotarnos dun autoconsumo compartido eléctrico que acade o óptimo
+                            para cada un dos socios da Cooperativa.</p>
+                        <a href="info.html">
+                            <button class="btn">&plus;&nbsp;Saber máis</button>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <hr>
+        <div id="enerxetica-novas" class="section" style="animation: fadein 0.8s">
+            <h2>Novas</h2>
+            <table class="output"></table>
+            <script src="../../scripts/spreadsheet_energetica.js"></script>
+        </div>
+        <hr>
+        <div id="enerxetica-directiva" class="section" style="animation: fadein 1.2s">
+            <h2>Directiva</h2>
+            <div style="width: 100%; text-align: center; display: flex">
+                    <div class="community-person">
+                        <h4>Presidente</h4>
+                        <img style="width: 50%" src="../../assets/img3.jpg" alt="Integrante x">
+                        <p><i>Nome Apelido1 Apelido2</i></p>
+                    </div>
+                    <div class="community-person">
+                        <h4>Vicepresidente</h4>
+                        <img style="width: 50%" src="../../assets/img3.jpg" alt="Integrante x">
+                        <p><i>Nome Apelido1 Apelido2</i></p>
+                    </div>
+                    <div class="community-person">
+                        <h4>Secretario</h4>
+                        <img style="width: 50%" src="../../assets/img3.jpg" alt="Integrante x">
+                        <p><i>Nome Apelido1 Apelido2</i></p>
+                    </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-margin">
+                <h2>Contacto</h2>
+                <p><a href="mailto:comunidadeenerxeticabuchabade@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;comunidadeenerxeticabuchabade@gmail.com</a></p>
+                <p><a href="tel:+34---------"  target="_blank"><i class="fa fa-phone"></i>
+                    &nbsp;&nbsp;+34 --- --- ---</a></p>
+            </div>
+
+            <div>
+                <h2>Desenvolvemento web</h2>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+                <h2>Fotografía</h2>
+                <p><a href="https://instagram.com/manues.jpg" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Manuel Estévez Murado</a></p>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+            </div>
+        </footer>
+
+    </article>
+</body>
+</html>

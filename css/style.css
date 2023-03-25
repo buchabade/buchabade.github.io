@@ -5,6 +5,7 @@
 @import "carousel.css";
 @import "slick_carousel.css";
 @import "timeline.css";
+@import "card_hover/card_hover.css";
 
 /* PROJECT PALETTE (dark<->light): #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
 
@@ -16,6 +17,10 @@
 @keyframes fadeout {
     from { opacity: 1; }
     to   { opacity: 0; }
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +42,7 @@ article{
     padding: 0 1.5rem 5rem 1.5rem;
 }
 
-.title{
+.card-title{
     text-align: left;
     padding: 0 1.5rem;
 }

@@ -1,0 +1,12 @@
+.card:nth-child(1):before {
+    background-image: url('../../assets/energetica/intro_1.JPG');
+}
+.card:nth-child(2):before {
+    background-image: url('../../assets/energetica/intro_2.JPG');
+}
+.card:nth-child(3):before {
+    background-image: url('../../assets/energetica/intro_3.JPG');
+}
+.card:nth-child(4):before {
+    background-image: url('../../assets/energetica/intro_4.JPG');
+}
