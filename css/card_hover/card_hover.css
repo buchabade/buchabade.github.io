@@ -10,13 +10,19 @@
 }
 
 .cards-container {
-    display: grid;
+    display: flex;
     grid-gap: 1rem;
     padding: 1rem;
     max-width: 100%;
     margin: 0 auto;
     font-family: var(--font-sans);
 }
+@media (max-width: 1199px){
+    .cards-container{
+        display: grid;
+    }
+}
+
 @media (min-width: 800px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
