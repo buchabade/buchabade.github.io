@@ -51,6 +51,13 @@
         height: 50vh;
     }
 }
+
+@media (max-width: 799px) {
+    .card {
+        height: 33vh;
+    }
+}
+
 .card:before {
     content: "";
     position: absolute;
