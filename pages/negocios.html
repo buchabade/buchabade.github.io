@@ -10,131 +10,174 @@
     <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Negocios, Locales, Locais">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negocios locais / Buchabade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="loadHeader()">
-    <div id="header">
-        <header>
-            <div style="display: flex">
-                <div style="width: min-content">
-                    <div id="iconButton" class="icon_container" onclick="toggleHeader()">
-                        <div class="icon">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: max-content">
-                    <a href="../index.html" class="header_title">BUCHABADE</a>
-                </div>
-            </div>
-        </header>
-        <header id="foldingHeader">
-            <a href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
-            <a href="enerxetica/introducion.html">C. enerxética</a>
-            <a href="montes/introducion.html">C. de montes</a>
-            <a href="augas/introducion.html">C. de augas</a>
-            <a href="negocios.html" class="active">Negocios locais</a>
-            <a href="acontecementos.html">Acontecementos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </header>
+<body>
+    <header>
+    <div class="navigation-button" onclick="toggleNavigation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <a href="../index.html">BUCHABADE</a>
+    </header>
+    <div id="navigation" style="display: none">
+    <script src="../scripts/navigation.js"></script>
+    <a href="../pages/novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
+    <a href="enerxetica/introducion.html">C.&nbsp;enerxética</a>
+    <a href="montes/introducion.html">C.&nbsp;de&nbsp;montes</a>
+    <a href="augas/introducion.html">C.&nbsp;de&nbsp;augas</a>
+    <a href="../pages/negocios.html">Negocios&nbsp;locais</a>
+    <a href="../pages/acontecementos.html">Acontecementos</a>
+    <a href="../pages/galeria.html">Galería</a>
     </div>
 
-    <script src="../scripts/header_management.js"></script>
+    <article>
 
-    <article id="body">
-        <div class="body">
-            <div class="content_left">
-                <div class="item_left">
-                    <!--
-                    <h2>Acceso rápido</h2>
-                    <a class="quick_access_button" href="#negocio1"><i>Negocio 1</i></a>
-                    <a class="quick_access_button" href="#negocio2"><i>Negocio 2</i></a>
-                    <a class="quick_access_button" href="#negocio3"><i>Negocio 3</i></a>
-                    -->
+        <div class="section" style="animation: fadein 0.4s">
+            <h1>Negocios locais</h1>
+            <div class="flex">
+                <div class="flex-item-50" style="padding-bottom: 2rem">
+                    <div class="left">
+                        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1cuR78Kml1qJvIXkcUoRvBM2sFSZzCYM&ehbc=2E312F" class="map"></iframe>
+                    </div>
+                </div>
+                <div class="flex-item-50">
+                    <div class="right">
+                        <div class="locales-container">
+                            <!-- START NEGOCIO -->
+                            <div id="bar_santa_ana" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/bar_santa_ana.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/2QN3kzRQw2ncFeno6"
+                                               target="_blank" style="color: white;">Bar Santa Ana</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="farmacia_josefa_otero_lamas" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/farmacia_josefa_otero_lamas.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/2MEbaPfQZij2Q76t9"
+                                               target="_blank" style="color: white;">Farmacia Josefa Otero Lamas</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="granitos_santa_ana" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/granitos_santa_ana.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/PjET3a89yvfhNZG47"
+                                               target="_blank" style="color: white;">Granitos Santa Ana S.L.</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="auto_maner" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/auto_maner.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/P8SL2JsuVnApdV9q7"
+                                               target="_blank" style="color: white;">Auto Maner S.L.</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="o_candel_de_santa_ana" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/o_candil_de_santa_ana.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/pZTtRYunwRrHmMc49"
+                                               target="_blank" style="color: white;">O Candil de Santa Ana</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="casa_o_lar_de_sara" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/casa_o_lar_de_sara.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/kSxoD6YhkzEgV8FZA"
+                                               target="_blank" style="color: white;">Casa O Lar de Sara</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                            <hr>
+                            <!-- START NEGOCIO -->
+                            <div id="centro_ecuestre_atlantico" class="flex">
+                                <div class="flex-item-33">
+                                    <img src="../assets/5_negocios/centro_ecuestre_atlantico.jpg" alt="">
+                                </div>
+                                <div class="flex-item-66">
+                                    <div class="right">
+                                        <h2><a href="https://goo.gl/maps/rxFY1AZVkTMASiwj7"
+                                               target="_blank" style="color: white;">Centro Ecuestre Atlántico</a></h2>
+                                        <p>Lorem ipsum sitamet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END NEGOCIO -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="content_center">
-                <div class="item_center">
-                    <h1>Negocios locais</h1>
-                    <label>
-                        [En desenvolvemento ...]
-                    </label>
-                    <!--
-                    <div class="content_flex">
-                        <div class="item_flex_left">
-                            <img class="image" src="../assets/7_galeria/capilla1.JPG" alt="" style="margin-top: 25px">
-                        </div>
-                        <div class="item_flex_right">
-                            <h3 id="negocio1">Negocio 1</h3>
-                            <label>
-                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-                                del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló d
-                                e tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que
-                                tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al
-                                original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales conten
-                                ian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Ald
-                                us PageMaker, el cual incluye versiones de Lorem Ipsum.
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="content_flex">
-                        <div class="item_flex_left">
-                            <img class="image" src="../assets/7_galeria/capilla1.JPG" alt="" style="margin-top: 25px">
-                        </div>
-                        <div class="item_flex_right">
-                            <h3 id="negocio2">Negocio 2</h3>
-                            <label>
-                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-                                del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló d
-                                e tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que
-                                tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al
-                                original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales conten
-                                ian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Ald
-                                us PageMaker, el cual incluye versiones de Lorem Ipsum.
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="content_flex">
-                        <div class="item_flex_left">
-                            <img class="image" src="../assets/7_galeria/capilla1.JPG" alt="" style="margin-top: 25px">
-                        </div>
-                        <div class="item_flex_right">
-                            <h3 id="negocio3">Negocio 3</h3>
-                            <label>
-                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-                                del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló d
-                                e tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que
-                                tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al
-                                original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales conten
-                                ian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Ald
-                                us PageMaker, el cual incluye versiones de Lorem Ipsum.
-                            </label>
-                        </div>
-                    </div>
-                    -->
-                </div>
-            </div>
-
-            <div class="content_right"></div>
         </div>
-    </article>
 
-    <div id="footer">
         <footer>
-            <div style="padding-top: 10px">
-                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
-                <p>Comunidade de Buchabade</p>
+            <div class="contact-margin">
+                <h2>Contacto</h2>
+                <p><a href="mailto:comunidadeenerxeticabuchabade@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;comunidadeenerxeticabuchabade@gmail.com</a></p>
+                <p><a href="tel:+34---------"  target="_blank"><i class="fa fa-phone"></i>
+                    &nbsp;&nbsp;+34 --- --- ---</a></p>
+            </div>
+
+            <div>
+                <h2>Desenvolvemento web</h2>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+                <h2>Fotografía</h2>
+                <p><a href="https://instagram.com/manues.jpg" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Manuel Estévez Murado</a></p>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
             </div>
         </footer>
-    </div>
+    </article>
+
 </body>
 </html>
