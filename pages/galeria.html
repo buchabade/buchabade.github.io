@@ -10,259 +10,502 @@
     <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Aguas, Augas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería / Buchabade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<script src="../scripts/header_management.js"></script>
+<body>
 
-<body onload="loadHeader()">
-    <div id="header">
-        <header>
-            <div style="display: flex">
-                <div style="width: min-content">
-                    <div id="iconButton" class="icon_container" onclick="toggleHeader()">
-                        <div class="icon">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: max-content">
-                    <a href="../index.html" class="header_title">BUCHABADE</a>
-                </div>
-            </div>
-        </header>
-        <header id="foldingHeader">
-            <a href="novas_avisos.html"><b>!</b>&nbsp;Novas e avisos</a>
-            <a href="enerxetica/introducion.html">C. enerxética</a>
-            <a href="montes/introducion.html">C. de montes</a>
-            <a href="augas/introducion.html">C. de augas</a>
-            <a href="negocios.html">Negocios locais</a>
-            <a href="acontecementos.html">Acontecementos</a>
-            <a href="galeria.html" class="active">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </header>
+    <header>
+        <div class="navigation-button" onclick="toggleNavigation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="../index.html">BUCHABADE</a>
+    </header>
+    <div id="navigation" style="display: none">
+        <script src="../scripts/navigation.js"></script>
+        <a href="../pages/novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
+        <a href="enerxetica/introducion.html">C.&nbsp;enerxética</a>
+        <a href="montes/introducion.html">C.&nbsp;de&nbsp;montes</a>
+        <a href="augas/introducion.html">C.&nbsp;de&nbsp;augas</a>
+        <a href="../pages/negocios.html">Negocios&nbsp;locais</a>
+        <a href="../pages/acontecementos.html">Acontecementos</a>
+        <a href="../pages/galeria.html">Galería</a>
     </div>
 
-    <article id="body">
-        <div class="body">
-            <div class="content_left"></div>
-
-            <div class="content_center">
-                <div class="item_center">
-                    <h1>Buchabade en imaxes</h1>
-                    <div id="carousel">
-                        <div id="slideshow" class="slideshow_container">
-                            <div class="slide fade">
-                                <div class="count">1 / 26</div>
-                                <img src="../assets/7_galeria/secuoyas1.JPG" style="width:100%" alt="">
-                                <div class="caption">O bosque de secuoyas de Buchabade, o máis antigo de Galicia.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">2 / 26</div>
-                                <img src="../assets/7_galeria/secuoyas2.JPG" style="width:100%" alt="">
-                                <div class="caption">O bosque de secuoyas de Buchabade, o máis antigo de Galicia.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">3 / 26</div>
-                                <img src="../assets/7_galeria/secuoyas3.JPG" style="width:100%" alt="">
-                                <div class="caption">O bosque de secuoyas de Buchabade, o máis antigo de Galicia.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">4 / 26</div>
-                                <img src="../assets/7_galeria/secuoyas4.JPG" style="width:100%" alt="">
-                                <div class="caption">O bosque de secuoyas de Buchabade, o máis antigo de Galicia.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">5 / 26</div>
-                                <img src="../assets/7_galeria/molino1.JPG" style="width:100%" alt="">
-                                <div class="caption">Os muíños, restaurados tras máis dun século en pe.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">6 / 26</div>
-                                <img src="../assets/7_galeria/molino2.JPG" style="width:100%" alt="">
-                                <div class="caption">Os muíños, restaurados tras máis dun século en pe.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">7 / 26</div>
-                                <img src="../assets/7_galeria/molino3.JPG" style="width:100%" alt="">
-                                <div class="caption">Os muíños, restaurados tras máis dun século en pe.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">8 / 26</div>
-                                <img src="../assets/7_galeria/prado2.JPG" style="width:100%" alt="">
-                                <div class="caption">Gran parte do terreo está aproveitado como veigas, onde o gando pasta ou tamén
-                                    empregadas para o cultivo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">9 / 26</div>
-                                <img src="../assets/7_galeria/prado1.JPG" style="width:100%" alt="">
-                                <div class="caption">Gran parte do terreo está aproveitado como veigas, onde o gando pasta ou tamén
-                                    empregadas para o cultivo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">10 / 26</div>
-                                <img src="../assets/7_galeria/hipica1.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">11 / 26</div>
-                                <img src="../assets/7_galeria/hipica2.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">12 / 26</div>
-                                <img src="../assets/7_galeria/hipica3.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">13 / 26</div>
-                                <img src="../assets/7_galeria/hipica4.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">14 / 26</div>
-                                <img src="../assets/7_galeria/hipica5.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">15 / 26</div>
-                                <img src="../assets/7_galeria/hipica6.JPG" style="width:100%" alt="">
-                                <div class="caption">O Centro Ecuestre Atlántico, a hípica do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">16 / 26</div>
-                                <img src="../assets/7_galeria/capilla1.JPG" style="width:100%" alt="">
-                                <div class="caption">A capela de Santa Ana, con varios séculos de antigüedade.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">17 / 26</div>
-                                <img src="../assets/7_galeria/capilla2.JPG" style="width:100%" alt="">
-                                <div class="caption">A capela de Santa Ana, con varios séculos de antigüedade.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">18 / 26</div>
-                                <img src="../assets/7_galeria/capilla3.JPG" style="width:100%" alt="">
-                                <div class="caption">A capela de Santa Ana, con varios séculos de antigüedade.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">19 / 26</div>
-                                <img src="../assets/7_galeria/capilla4.JPG" style="width:100%" alt="">
-                                <div class="caption">A capela de Santa Ana, con varios séculos de antigüedade.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">20 / 26</div>
-                                <img src="../assets/7_galeria/campo1.JPG" style="width:100%" alt="">
-                                <div class="caption">O campo da festa, situado a carón da capela.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">21 / 26</div>
-                                <img src="../assets/7_galeria/monte1.JPG" style="width:100%" alt="">
-                                <div class="caption">Parte das plantacions do monte tálanse en ciclos de varios anos.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">22 / 26</div>
-                                <img src="../assets/7_galeria/desguace1.JPG" style="width:100%" alt="">
-                                <div class="caption">O desguace de vehículos mais o taller de pedra situados a un lado da aldea.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">23 / 26</div>
-                                <img src="../assets/7_galeria/desguace2.JPG" style="width:100%" alt="">
-                                <div class="caption">O desguace de vehículos mais o taller de pedra situados a un lado da aldea.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">24 / 26</div>
-                                <img src="../assets/7_galeria/pueblo1.JPG" style="width:100%" alt="">
-                                <div class="caption">Unha vista da aldea, abaixo á dereita, a casa do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">25 / 26</div>
-                                <img src="../assets/7_galeria/casadelpueblo1.JPG" style="width:100%" alt="">
-                                <div class="caption">A casa do pobo.</div>
-                            </div>
-                            <div class="slide fade">
-                                <div class="count">26 / 26</div>
-                                <img src="../assets/7_galeria/casadelpueblo2.JPG" style="width:100%" alt="">
-                                <div class="caption">A casa do pobo.</div>
-                            </div>
-
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br/>
-                        <div id="dots" style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
-                            <span class="dot" onclick="currentSlide(6)"></span>
-                            <span class="dot" onclick="currentSlide(7)"></span>
-                            <span class="dot" onclick="currentSlide(8)"></span>
-                            <span class="dot" onclick="currentSlide(9)"></span>
-                            <span class="dot" onclick="currentSlide(10)"></span>
-                            <span class="dot" onclick="currentSlide(11)"></span>
-                            <span class="dot" onclick="currentSlide(12)"></span>
-                            <span class="dot" onclick="currentSlide(13)"></span>
-                            <span class="dot" onclick="currentSlide(14)"></span>
-                            <span class="dot" onclick="currentSlide(15)"></span>
-                            <span class="dot" onclick="currentSlide(16)"></span>
-                            <span class="dot" onclick="currentSlide(17)"></span>
-                            <span class="dot" onclick="currentSlide(18)"></span>
-                            <span class="dot" onclick="currentSlide(19)"></span>
-                            <span class="dot" onclick="currentSlide(20)"></span>
-                            <span class="dot" onclick="currentSlide(21)"></span>
-                            <span class="dot" onclick="currentSlide(22)"></span>
-                            <span class="dot" onclick="currentSlide(23)"></span>
-                            <span class="dot" onclick="currentSlide(24)"></span>
-                            <span class="dot" onclick="currentSlide(25)"></span>
-                            <span class="dot" onclick="currentSlide(26)"></span>
-                        </div>
-                    </div>
+    <article>
+        <div id="aldea" class="section" style="animation: fadein 0.4s">
+            <div class="carousel-container">
+                <h1>Galería</h1>
+                <h2>A aldea</h2>
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="aldea-1">
+                    <input type="radio" name="slides" id="aldea-2">
+                    <input type="radio" name="slides" id="aldea-3">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/aldea/aldea_1.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/aldea/aldea_2.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/aldea/aldea_3.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="aldea-1"><img src="../assets/7_galeria/aldea/aldea_1.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="aldea-2"><img src="../assets/7_galeria/aldea/aldea_2.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="aldea-3"><img src="../assets/7_galeria/aldea/aldea_3.JPG" alt=""></label>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="content_right"></div>
         </div>
-    </article>
+        <hr>
+        <div id="hipica" class="section" style="animation: fadein 0.8s">
+            <div class="carousel-container">
+                <h2>Centro Ecuestre Atlántico</h2>
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="hipica-1">
+                    <input type="radio" name="slides" id="hipica-2">
+                    <input type="radio" name="slides" id="hipica-3">
+                    <input type="radio" name="slides" id="hipica-4">
+                    <input type="radio" name="slides" id="hipica-5">
+                    <input type="radio" name="slides" id="hipica-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_1.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_2.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_3.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_4.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_5.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/hipica/hipica_6.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="hipica-1"><img src="../assets/7_galeria/hipica/hipica_1.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="hipica-2"><img src="../assets/7_galeria/hipica/hipica_2.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="hipica-3"><img src="../assets/7_galeria/hipica/hipica_3.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="hipica-4"><img src="../assets/7_galeria/hipica/hipica_4.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="hipica-5"><img src="../assets/7_galeria/hipica/hipica_5.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="hipica-6"><img src="../assets/7_galeria/hipica/hipica_6.JPG" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="capela" class="section" style="animation: fadein 1.2s">
+            <div class="carousel-container">
+                <h2>A Capela de Santa Ana</h2>
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="capela-1">
+                    <input type="radio" name="slides" id="capela-2">
+                    <input type="radio" name="slides" id="capela-3">
+                    <input type="radio" name="slides" id="capela-4">
+                    <input type="radio" name="slides" id="capela-5">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/capela/capela_1.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/capela/capela_2.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/capela/capela_3.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/capela/capela_4.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/capela/capela_5.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="capela-1"><img src="../assets/7_galeria/capela/capela_1.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="capela-2"><img src="../assets/7_galeria/capela/capela_2.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="capela-3"><img src="../assets/7_galeria/capela/capela_3.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="capela-4"><img src="../assets/7_galeria/capela/capela_4.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="capela-5"><img src="../assets/7_galeria/capela/capela_5.JPG" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="monte" class="section" style="animation: fadein 1.6s">
+            <div class="carousel-container">
+                <h2>O noso monte</h2>
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="monte-1">
+                    <input type="radio" name="slides" id="monte-2">
+                    <input type="radio" name="slides" id="monte-3">
+                    <input type="radio" name="slides" id="monte-4">
+                    <input type="radio" name="slides" id="monte-5">
+                    <input type="radio" name="slides" id="monte-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_1.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_2.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_3.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_4.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_5.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/monte/monte_6.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="monte-1"><img src="../assets/7_galeria/monte/monte_1.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="monte-2"><img src="../assets/7_galeria/monte/monte_2.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="monte-3"><img src="../assets/7_galeria/monte/monte_3.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="monte-4"><img src="../assets/7_galeria/monte/monte_4.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="monte-5"><img src="../assets/7_galeria/monte/monte_5.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="monte-6"><img src="../assets/7_galeria/monte/monte_6.JPG" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="muino" class="section" style="animation: fadein 2.0s">
+            <div class="carousel-container">
+                <h2>Os muíños</h2>
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="muino-1">
+                    <input type="radio" name="slides" id="muino-2">
+                    <input type="radio" name="slides" id="muino-3">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/muino/muino_1.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/muino/muino_2.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/7_galeria/muino/muino_3.JPG" alt="">
+                                </div>
+                                <figcaption>
+                                    &nbsp;
+                                    <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="muino-1"><img src="../assets/7_galeria/muino/muino_1.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="muino-2"><img src="../assets/7_galeria/muino/muino_2.JPG" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="muino-3"><img src="../assets/7_galeria/muino/muino_3.JPG" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <div id="footer">
         <footer>
-            <div style="padding-top: 10px">
-                <img style="width: 45px" src="../assets/logo_cler.png" alt="">
-                <p>Comunidade de Buchabade</p>
+            <div class="contact-margin">
+                <h2>Contacto</h2>
+                <p><a href="mailto:comunidadeenerxeticabuchabade@gmail.com" target="_blank">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;comunidadeenerxeticabuchabade@gmail.com</a></p>
+                <p><a href="tel:+34---------"  target="_blank"><i class="fa fa-phone"></i>
+                    &nbsp;&nbsp;+34 --- --- ---</a></p>
+            </div>
+
+            <div>
+                <h2>Desenvolvemento web</h2>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
+                <h2>Fotografía</h2>
+                <p><a href="https://instagram.com/manues.jpg" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Manuel Estévez Murado</a></p>
+                <p><a href="https://joaquinsolla.com" target="_blank"><i class="fa fa-external-link"></i>
+                    &nbsp;&nbsp;Joaquín Solla Vázquez</a></p>
             </div>
         </footer>
-    </div>
+    </article>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
 </body>
 </html>

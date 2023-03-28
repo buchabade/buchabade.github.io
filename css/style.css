@@ -2,10 +2,9 @@
 @import "footer.css";
 
 @import "tables.css";
-@import "carousel.css";
-@import "slick_carousel.css";
 @import "timeline.css";
 @import "card_hover/card_hover.css";
+@import "caorusel.css";
 
 /* PROJECT PALETTE (dark<->light): #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
 
