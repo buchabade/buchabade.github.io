@@ -4,5 +4,6 @@ Animaciones
 Comprimir imágenes
 Alt text en todas las imagenes
 Arreglar HEADs
+reorganizar ficheros
 Aplicar fuente
 Digitalizar icono
