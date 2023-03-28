@@ -110,26 +110,34 @@ article{
     display: block;
     max-height: 75vh;
     overflow: auto;
-    padding: 1rem;
-    background: #A3B18A;
-    color: black;
-    border-radius: 12px;
 }
 
-.listview img {
+.map-location{
+    padding: 0.25rem 0.25rem 0 0.25rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+    text-align: left;
+    height: min-content;
+}
+
+.map-location h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.map-location img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
 }
 
-.listview hr {
-    margin: 1rem 0;
-}
-
-#aldea{
+#hipica{
     display: block;
 }
 
-#hipica, #capela, #monte, #muino{
+#aldea, #capela, #monte, #muino{
     display: none;
 }
 
@@ -172,15 +180,15 @@ hr {
 .gallery-button {
     border: 1px solid black;
     margin-bottom: 0.5rem;
-    background: transparent;
     cursor: pointer;
     padding: 0.5rem;
-    border-radius: 5px;
     color: black;
     font-size: 1rem;
     font-weight: bold;
     width: 100%;
     text-align: left;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 799px) {
@@ -218,15 +226,11 @@ hr {
 
     .listview {
         max-height: none;
-        background: transparent;
-        padding: 0;
     }
 
-    .listview .flex{
-        padding: 1rem;
-        background: #A3B18A;
-        border-radius: 12px;
-        margin-bottom: 1.5rem;
+    .map-location{
+        margin-bottom: 2rem;
+        padding: 0.25rem;
     }
 
     .gallery-button {
