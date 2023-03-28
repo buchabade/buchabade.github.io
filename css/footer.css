@@ -5,6 +5,7 @@ footer {
     align-items: start;
     background-color: #3A5A40;
     color: white;
+    border-radius: 10px 10px 0 0;
 }
 
 footer h2 {

@@ -7,4 +7,3 @@ Arreglar HEADs
 reorganizar ficheros
 añadir telef
 Digitalizar icono
-sombra al header
