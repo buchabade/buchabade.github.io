@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lightbox2": "^2.11.4"
+    "lightbox2": "^2.11.4",
+    "slick-carousel": "^1.8.1"
   }
 }
