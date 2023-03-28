@@ -119,6 +119,8 @@ article{
     margin-bottom: 1rem;
     text-align: left;
     height: min-content;
+    align-items: center;
+    display: flex;
 }
 
 .map-location h3 {
@@ -229,8 +231,7 @@ hr {
     }
 
     .map-location{
-        margin-bottom: 2rem;
-        padding: 0.25rem;
+        padding: 0.5rem;
     }
 
     .gallery-button {
