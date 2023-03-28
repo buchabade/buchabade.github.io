@@ -40,461 +40,468 @@
 
     <article>
         <div class="section" style="min-height: 90vh;">
-            <h1>Galería</h1>
+
             <script src="../scripts/gallery_management.js"></script>
-            <div style="text-align: left">
-                <button onclick="toggleSectionDisplay(0)" id="aldea-button">&bull;&nbsp;A aldea</button>
-                <button onclick="toggleSectionDisplay(1)" id="hipica-button">Centro Ecuestre Atlántico</button>
-                <button onclick="toggleSectionDisplay(2)" id="capela-button">A Capela de Santa Ana</button>
-                <button onclick="toggleSectionDisplay(3)" id="monte-button">O noso monte</button>
-                <button onclick="toggleSectionDisplay(4)" id="muino-button">Os muíños</button>
-            </div>
-            <div id="aldea" style="animation: fadein 0.4s; margin-bottom: 5rem;">
-                <div class="carousel-container">
-                    <h2>A aldea</h2>
-                    <div class="carousel">
-                        <input type="radio" name="slides" checked="checked" id="aldea-1">
-                        <input type="radio" name="slides" id="aldea-2">
-                        <input type="radio" name="slides" id="aldea-3">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/aldea/aldea_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_1.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/aldea/aldea_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_2.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/aldea/aldea_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_3.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="aldea-1"><img src="../assets/7_galeria/aldea/aldea_1.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="aldea-2"><img src="../assets/7_galeria/aldea/aldea_2.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="aldea-3"><img src="../assets/7_galeria/aldea/aldea_3.JPG" alt=""></label>
-                            </li>
-                        </ul>
+            <div class="flex">
+                <div class="flex-item-20" style="text-align: left">
+                    <h1>Galería</h1>
+                    <button onclick="toggleSectionDisplay(0)" id="aldea-button" class="gallery-button">&bull;&nbsp;A aldea</button>
+                    <button onclick="toggleSectionDisplay(1)" id="hipica-button" class="gallery-button">Centro Ecuestre Atlántico</button>
+                    <button onclick="toggleSectionDisplay(2)" id="capela-button" class="gallery-button">A Capela de Santa Ana</button>
+                    <button onclick="toggleSectionDisplay(3)" id="monte-button" class="gallery-button">O noso monte</button>
+                    <button onclick="toggleSectionDisplay(4)" id="muino-button" class="gallery-button">Os muíños</button>
+                </div>
+                <div class="flex-item-80">
+                    <h1 class="gallery-top-separator">&nbsp;</h1>
+                    <div id="aldea" style="animation: fadein 0.4s; margin-bottom: 5rem;">
+                        <div class="carousel-container">
+                            <h2>A aldea</h2>
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="aldea-1">
+                                <input type="radio" name="slides" id="aldea-2">
+                                <input type="radio" name="slides" id="aldea-3">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/aldea/aldea_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_1.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/aldea/aldea_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_2.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/aldea/aldea_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/aldea/aldea_3.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="aldea-1"><img src="../assets/7_galeria/aldea/aldea_1.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="aldea-2"><img src="../assets/7_galeria/aldea/aldea_2.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="aldea-3"><img src="../assets/7_galeria/aldea/aldea_3.JPG" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hipica" style="animation: fadein 0.4s; margin-bottom: 5rem;">
+                        <div class="carousel-container">
+                            <h2>Centro Ecuestre Atlántico</h2>
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="hipica-1">
+                                <input type="radio" name="slides" id="hipica-2">
+                                <input type="radio" name="slides" id="hipica-3">
+                                <input type="radio" name="slides" id="hipica-4">
+                                <input type="radio" name="slides" id="hipica-5">
+                                <input type="radio" name="slides" id="hipica-6">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_1.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_2.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_3.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_4.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_5.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/hipica/hipica_6.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_6.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="hipica-1"><img src="../assets/7_galeria/hipica/hipica_1.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="hipica-2"><img src="../assets/7_galeria/hipica/hipica_2.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="hipica-3"><img src="../assets/7_galeria/hipica/hipica_3.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="hipica-4"><img src="../assets/7_galeria/hipica/hipica_4.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="hipica-5"><img src="../assets/7_galeria/hipica/hipica_5.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="hipica-6"><img src="../assets/7_galeria/hipica/hipica_6.JPG" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="capela" style="animation: fadein 0.4s; margin-bottom: 5rem;">
+                        <div class="carousel-container">
+                            <h2>A Capela de Santa Ana</h2>
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="capela-1">
+                                <input type="radio" name="slides" id="capela-2">
+                                <input type="radio" name="slides" id="capela-3">
+                                <input type="radio" name="slides" id="capela-4">
+                                <input type="radio" name="slides" id="capela-5">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/capela/capela_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/capela/capela_1.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/capela/capela_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/capela/capela_2.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/capela/capela_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/capela/capela_3.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/capela/capela_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/capela/capela_4.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/capela/capela_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/capela/capela_5.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="capela-1"><img src="../assets/7_galeria/capela/capela_1.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="capela-2"><img src="../assets/7_galeria/capela/capela_2.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="capela-3"><img src="../assets/7_galeria/capela/capela_3.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="capela-4"><img src="../assets/7_galeria/capela/capela_4.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="capela-5"><img src="../assets/7_galeria/capela/capela_5.JPG" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="monte" style="animation: fadein 0.4s; margin-bottom: 5rem;">
+                        <div class="carousel-container">
+                            <h2>O noso monte</h2>
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="monte-1">
+                                <input type="radio" name="slides" id="monte-2">
+                                <input type="radio" name="slides" id="monte-3">
+                                <input type="radio" name="slides" id="monte-4">
+                                <input type="radio" name="slides" id="monte-5">
+                                <input type="radio" name="slides" id="monte-6">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_1.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_2.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_3.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_4.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_5.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/monte/monte_6.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/monte/monte_6.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="monte-1"><img src="../assets/7_galeria/monte/monte_1.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="monte-2"><img src="../assets/7_galeria/monte/monte_2.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="monte-3"><img src="../assets/7_galeria/monte/monte_3.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="monte-4"><img src="../assets/7_galeria/monte/monte_4.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="monte-5"><img src="../assets/7_galeria/monte/monte_5.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="monte-6"><img src="../assets/7_galeria/monte/monte_6.JPG" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="muino" style="animation: fadein 0.4s; margin-bottom: 5rem;">
+                        <div class="carousel-container">
+                            <h2>Os muíños</h2>
+                            <div class="carousel">
+                                <input type="radio" name="slides" checked="checked" id="muino-1">
+                                <input type="radio" name="slides" id="muino-2">
+                                <input type="radio" name="slides" id="muino-3">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/muino/muino_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/muino/muino_1.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/muino/muino_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/muino/muino_2.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <a href="../assets/7_galeria/muino/muino_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
+                                                    <img style="width: 100%" src="../assets/7_galeria/muino/muino_3.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <figcaption>
+                                                &nbsp;
+                                                <span class="credit">Fotografía: Manuel Estévez Murado</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="muino-1"><img src="../assets/7_galeria/muino/muino_1.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="muino-2"><img src="../assets/7_galeria/muino/muino_2.JPG" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="muino-3"><img src="../assets/7_galeria/muino/muino_3.JPG" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="hipica" style="animation: fadein 0.4s; margin-bottom: 5rem;">
-                <div class="carousel-container">
-                    <h2>Centro Ecuestre Atlántico</h2>
-                    <div class="carousel">
-                        <input type="radio" name="slides" checked="checked" id="hipica-1">
-                        <input type="radio" name="slides" id="hipica-2">
-                        <input type="radio" name="slides" id="hipica-3">
-                        <input type="radio" name="slides" id="hipica-4">
-                        <input type="radio" name="slides" id="hipica-5">
-                        <input type="radio" name="slides" id="hipica-6">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_1.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_2.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_3.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_4.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_5.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/hipica/hipica_6.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/hipica/hipica_6.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="hipica-1"><img src="../assets/7_galeria/hipica/hipica_1.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="hipica-2"><img src="../assets/7_galeria/hipica/hipica_2.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="hipica-3"><img src="../assets/7_galeria/hipica/hipica_3.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="hipica-4"><img src="../assets/7_galeria/hipica/hipica_4.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="hipica-5"><img src="../assets/7_galeria/hipica/hipica_5.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="hipica-6"><img src="../assets/7_galeria/hipica/hipica_6.JPG" alt=""></label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="capela" style="animation: fadein 0.4s; margin-bottom: 5rem;">
-                <div class="carousel-container">
-                    <h2>A Capela de Santa Ana</h2>
-                    <div class="carousel">
-                        <input type="radio" name="slides" checked="checked" id="capela-1">
-                        <input type="radio" name="slides" id="capela-2">
-                        <input type="radio" name="slides" id="capela-3">
-                        <input type="radio" name="slides" id="capela-4">
-                        <input type="radio" name="slides" id="capela-5">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/capela/capela_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/capela/capela_1.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/capela/capela_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/capela/capela_2.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/capela/capela_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/capela/capela_3.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/capela/capela_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/capela/capela_4.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/capela/capela_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/capela/capela_5.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="capela-1"><img src="../assets/7_galeria/capela/capela_1.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="capela-2"><img src="../assets/7_galeria/capela/capela_2.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="capela-3"><img src="../assets/7_galeria/capela/capela_3.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="capela-4"><img src="../assets/7_galeria/capela/capela_4.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="capela-5"><img src="../assets/7_galeria/capela/capela_5.JPG" alt=""></label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="monte" style="animation: fadein 0.4s; margin-bottom: 5rem;">
-                <div class="carousel-container">
-                    <h2>O noso monte</h2>
-                    <div class="carousel">
-                        <input type="radio" name="slides" checked="checked" id="monte-1">
-                        <input type="radio" name="slides" id="monte-2">
-                        <input type="radio" name="slides" id="monte-3">
-                        <input type="radio" name="slides" id="monte-4">
-                        <input type="radio" name="slides" id="monte-5">
-                        <input type="radio" name="slides" id="monte-6">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_1.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_2.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_3.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_4.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_4.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_5.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_5.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/monte/monte_6.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/monte/monte_6.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="monte-1"><img src="../assets/7_galeria/monte/monte_1.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="monte-2"><img src="../assets/7_galeria/monte/monte_2.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="monte-3"><img src="../assets/7_galeria/monte/monte_3.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="monte-4"><img src="../assets/7_galeria/monte/monte_4.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="monte-5"><img src="../assets/7_galeria/monte/monte_5.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="monte-6"><img src="../assets/7_galeria/monte/monte_6.JPG" alt=""></label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="muino" style="animation: fadein 0.4s; margin-bottom: 5rem;">
-                <div class="carousel-container">
-                    <h2>Os muíños</h2>
-                    <div class="carousel">
-                        <input type="radio" name="slides" checked="checked" id="muino-1">
-                        <input type="radio" name="slides" id="muino-2">
-                        <input type="radio" name="slides" id="muino-3">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/muino/muino_1.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/muino/muino_1.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/muino/muino_2.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/muino/muino_2.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <a href="../assets/7_galeria/muino/muino_3.JPG" data-lightbox="roadtrip" data-title="Fotografía: Manuel Estévez Murado">
-                                            <img style="width: 100%" src="../assets/7_galeria/muino/muino_3.JPG" alt="">
-                                        </a>
-                                    </div>
-                                    <figcaption>
-                                        &nbsp;
-                                        <span class="credit">Fotografía: Manuel Estévez Murado</span>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="muino-1"><img src="../assets/7_galeria/muino/muino_1.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="muino-2"><img src="../assets/7_galeria/muino/muino_2.JPG" alt=""></label>
-                            </li>
-                            <li>
-                                <label for="muino-3"><img src="../assets/7_galeria/muino/muino_3.JPG" alt=""></label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
         <footer>
