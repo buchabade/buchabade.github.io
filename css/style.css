@@ -18,12 +18,17 @@
     to   { opacity: 0; }
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format('truetype');
+}
+
 html, body {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     min-height: 100vh;
     background: #DAD7CD;
     color: black;

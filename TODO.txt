@@ -5,5 +5,5 @@ Comprimir imágenes
 Alt text en todas las imagenes
 Arreglar HEADs
 reorganizar ficheros
-Aplicar fuente
+añadir telef
 Digitalizar icono

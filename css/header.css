@@ -47,12 +47,12 @@ header a:hover::after {
     width: 2.35rem;
     height: 0.1rem;
     background-color: #588157;
-    margin: 0.6rem 0;
+    margin: 0.65rem 0;
     transition: 0.4s;
 }
 
 .change .bar1 {
-    transform: translate(0, 0.7rem) rotate(-45deg);
+    transform: translate(0, 0.75rem) rotate(-45deg);
 }
 
 .change .bar2 {
@@ -60,7 +60,7 @@ header a:hover::after {
 }
 
 .change .bar3 {
-    transform: translate(0, -0.7rem) rotate(45deg);
+    transform: translate(0, -0.75rem) rotate(45deg);
 }
 
 /* NAVIGATION MENU */
