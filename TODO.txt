@@ -1,8 +1,7 @@
-Animaciones
-Comprimir imágenes
 Alt text en todas las imagenes
 Arreglar HEADs
 reorganizar ficheros
 añadir telef
 Digitalizar icono
 Paginas de + info
+igualar todas las animaciones a 0.4s
