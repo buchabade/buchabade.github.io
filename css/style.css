@@ -5,8 +5,9 @@
 @import "timeline.css";
 @import "card_hover/card_hover.css";
 @import "caorusel.css";
+@import "card-carousel.css";
 
-/* PROJECT PALETTE (dark<->light): #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
+/* PROJECT PALETTE (dark<->light): #17141d #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -99,28 +100,26 @@ article{
     width: 25%;
 }
 
-.community-person{}
-
 .map {
     width: 100%;
     height: 75vh;
 }
 
-.listview {
-    display: block;
-    max-height: 75vh;
-    overflow: auto;
-}
-
 .map-location{
     padding: 0.25rem 0.25rem 0 0.25rem;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: #17141d;
+    color: white;
     margin-bottom: 1rem;
     text-align: left;
     height: min-content;
     align-items: center;
     display: flex;
+}
+
+.map-location:hover {
+    transform: translateX(1rem);
+    transition: 0.5s ease-out;
 }
 
 .map-location h3 {
@@ -180,17 +179,21 @@ hr {
 }
 
 .gallery-button {
-    border: 1px solid black;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
     padding: 0.5rem;
-    color: black;
+    background-color: #17141d;
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     width: 100%;
     text-align: left;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.gallery-button:hover {
+    transform: translateX(1rem);
+    transition: 0.5s ease-out;
 }
 
 @media (max-width: 799px) {
@@ -221,15 +224,6 @@ hr {
         width: 100%;
     }
 
-    .community-person{
-        padding: 0;
-        width: 100%;
-    }
-
-    .listview {
-        max-height: none;
-    }
-
     .map-location{
         padding: 0.5rem;
     }
@@ -240,6 +234,14 @@ hr {
 
     .gallery-top-separator{
         display: none;
+    }
+
+    .map-location:hover {
+        transform: translateY(-0.5rem);
+    }
+
+    .gallery-button:hover {
+        transform: translateY(-0.5rem);
     }
 
 }

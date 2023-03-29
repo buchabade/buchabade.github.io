@@ -1,5 +1,4 @@
 Añadir border radius
-Revisar alturas de "image" y demás
 Animaciones
 Comprimir imágenes
 Alt text en todas las imagenes

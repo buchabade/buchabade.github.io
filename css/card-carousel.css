@@ -1,0 +1,170 @@
+.carousel-card {
+    width: 17.5rem;
+    background-color: #17141d;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-out;
+    margin-right: 1.5rem;
+    padding: 1.25rem;
+}
+
+.carousel-card h3 {
+    margin: 0;
+}
+
+.carousel-card:hover {
+    transform: translateY(-1rem);
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: white;
+    font-weight: 300;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.bar {
+    height: 2px;
+    max-width: 15rem;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    z-index: 3;
+    width: 0;
+    height: 100%;
+    background: #344E41;
+    background: linear-gradient(90deg, #344E41 0%, #A3B18A 60%, rgba(255,186,0,1) 100%);
+    transition: 0.5s ease-out;
+}
+
+.carousel-card:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.card-image{
+    max-width: 15rem;
+}
+
+.card-image img{
+    margin-top: 1.25rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 799px) {
+
+    .carousel-card-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-card {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-card:hover {
+        transform: translateX(1.5rem);
+    }
+
+}
+
+
+/* FIRST VERSION
+.carousel-card {
+    display: flex;
+    height: 25rem;
+    width: 17.5rem;
+    background-color: #17141d;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.carousel-card:not(:first-child) {
+    margin-left: -12rem;
+}
+
+.carousel-card:hover {
+    transform: translateY(-1.5rem);
+    transition: 0.4s ease-out;
+}
+
+.carousel-card:hover ~ .carousel-card {
+    position: relative;
+    left: 15rem;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 0.5rem;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    left: 20px;
+    top: 3rem;
+    font-style: italic;
+}
+
+.bar {
+    position: absolute;
+    top: 6.5rem;
+    left: 20px;
+    height: 2px;
+    width: 15rem;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 0;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.5s ease-out;
+}
+
+.carousel-card:hover .filledbar {
+    width: 15rem;
+    transition: 0.4s ease-out;
+}
+
+.card-image{
+    position: absolute;
+    left: 20px;
+    top: 8rem;
+    width: 15rem;
+}
+
+.card-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+*/
