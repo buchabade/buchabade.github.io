@@ -1,4 +1,3 @@
-tamaño letra tarjetas comunidades
 title en fotos de la galeria
 Alt text en todas las imagenes
 Arreglar HEADs

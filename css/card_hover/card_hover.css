@@ -102,13 +102,11 @@
 .card-title {
     font-size: 1.3rem;
     font-weight: bold;
-    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .card-text {
-    font-size: 1.125rem;
     font-style: italic;
-    line-height: 1.35;
 }
 
 .btn {
