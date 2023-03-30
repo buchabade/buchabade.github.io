@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Web da comunidade de Buchabade: Comunidade de augas">
+    <meta name="description" content="Web da comunidade de Buchabade: Comunidade enerxética">
     <meta name="author" content="Joaquín Solla Vázquez">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" type="image/x-icon" href="../../assets/logo_cler.png">
-    <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Aguas, Augas">
+    <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Enerxética, Energética">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidade de augas / Buchabade</title>
+    <title>Comunidade enerxética / Buchabade</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 
 <body>
 
@@ -28,9 +30,9 @@
     <div id="navigation" style="display: none">
         <script src="../../scripts/navigation.js"></script>
         <a href="../novas_avisos.html">&bull;&nbsp;Novas&nbsp;e&nbsp;avisos</a>
-        <a href="../enerxetica/introducion.html">C.&nbsp;enerxética</a>
-        <a href="../montes/introducion.html">C.&nbsp;de&nbsp;montes</a>
-        <a href="introducion.html">C.&nbsp;de&nbsp;augas</a>
+        <a href="introducion_enerxetica.html">C.&nbsp;enerxética</a>
+        <a href="../montes/introducion_montes.html">C.&nbsp;de&nbsp;montes</a>
+        <a href="../augas/introducion_augas.html">C.&nbsp;de&nbsp;augas</a>
         <a href="../negocios.html">Negocios&nbsp;locais</a>
         <a href="../acontecementos.html">Acontecementos</a>
         <a href="../galeria.html">Galería</a>
@@ -39,35 +41,47 @@
     <article>
 
         <div class="card-title">
-            <h1>A Comunidade de Augas</h1>
+            <h1>A Comunidade Enerxética</h1>
         </div>
 
-        <link rel="stylesheet" href="../../css/card_hover/images_augas.css">
-        <div id="augas-intro" class="section" style="animation: fadein 0.4s">
+        <link rel="stylesheet" href="../../css/card_hover/images_enerxetica.css">
+        <div id="enerxetica-intro" class="section" style="animation: fadein 0.4s">
             <main class="cards-container">
                 <div class="card">
                     <div class="card-content">
-                        <h2 class="card-title">Os nosos devanceiros</h2>
-                        <p class="card-text">No ano 75, toda a veciñanza apoiou económicamente para captar dous manantiais, facer un depósito e as distribucións até as casas.</p>
-                        <a href="info.html">
+                        <h2 class="card-title">Coñece a CLER</h2>
+                        <p class="card-text"><b>C</b>omunidade <b>L</b>ocal de <b>E</b>nerxías <b>R</b>enovables.</p>
+                        <a href="info_enerxetica.html">
                             <button class="btn">&plus;&nbsp;Saber máis</button>
                         </a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2 class="card-title">A nova xestión da auga</h2>
-                        <p class="card-text">Modernizamos as instalacións, filtramos a auga, dotámonos de clorador e temos información a tempo real de niveis do depósito, do consumo, do cloro...</p>
-                        <a href="info.html">
+                        <h2 class="card-title">A nosa idea</h2>
+                        <p class="card-text">Unha alternativa máis xusta para a producción de
+                            enerxía renovable.</p>
+                        <a href="info_enerxetica.html">
                             <button class="btn">&plus;&nbsp;Saber máis</button>
                         </a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2 class="card-title">Na actualidade</h2>
-                        <p class="card-text">Temos que seguir adaptándonos aos novos escenarios coma as secas extremas. Temos en marcha o proxecto "Pozo", entre moitos outros.</p>
-                        <a href="info.html">
+                        <h2 class="card-title">Estado actual</h2>
+                        <p class="card-text">Somos 80 socios, 3 PYMES, a propia CMVMC e
+                            tamén a Comunidade de Usuarios de Augas De Buchabade.</p>
+                        <a href="info_enerxetica.html">
+                            <button class="btn">&plus;&nbsp;Saber máis</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Obxectivos</h2>
+                        <p class="card-text">O noso obxetivo é dotarnos dun autoconsumo compartido eléctrico que acade o óptimo
+                            para cada un dos socios da Cooperativa.</p>
+                        <a href="info_enerxetica.html">
                             <button class="btn">&plus;&nbsp;Saber máis</button>
                         </a>
                     </div>
@@ -75,13 +89,13 @@
             </main>
         </div>
         <hr>
-        <div id="augas-novas" class="section" style="animation: fadein 0.8s">
+        <div id="enerxetica-novas" class="section" style="animation: fadein 0.8s">
             <h2>Novas</h2>
             <table class="output"></table>
-            <script src="../../scripts/spreadsheet_aguas.js"></script>
+            <script src="../../scripts/spreadsheet_energetica.js"></script>
         </div>
         <hr>
-        <div id="augas-directiva" class="section" style="animation: fadein 1.2s">
+        <div id="enerxetica-directiva" class="section" style="animation: fadein 1.2s">
             <h2>Directiva</h2>
             <div class="flex">
                 <div class="carousel-card-container">
@@ -93,7 +107,7 @@
                             <div class="filledbar"></div>
                         </div>
                         <div class="card-image">
-                            <img src="../../assets/4_augas/directiva/presidente.jpg" alt="">
+                            <img src="../../assets/2_enerxetica/directiva/presidente.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -106,7 +120,7 @@
                             <div class="filledbar"></div>
                         </div>
                         <div class="card-image">
-                            <img src="../../assets/4_augas/directiva/vicepresidente.jpg" alt="">
+                            <img src="../../assets/2_enerxetica/directiva/vicepresidente.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -119,7 +133,7 @@
                             <div class="filledbar"></div>
                         </div>
                         <div class="card-image">
-                            <img src="../../assets/4_augas/directiva/secretario.jpg" alt="">
+                            <img src="../../assets/2_enerxetica/directiva/secretario.jpg" alt="">
                         </div>
                     </div>
                 </div>
