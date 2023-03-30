@@ -1,5 +1,3 @@
-ARREGLAR CSS NEGOCIOS
-
 Alt text en todas las imagenes
 Arreglar HEADs
 añadir telef

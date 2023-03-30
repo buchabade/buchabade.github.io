@@ -46,4 +46,20 @@
         padding: 0.5rem;
     }
 
+    .flex {
+        display: block;
+    }
+
+    .flex-item-50, .flex-item-66, .flex-item-33, .flex-item-20, .flex-item-80  {
+        width: 100%;
+    }
+
+    .left{
+        padding-right: 0;
+    }
+
+    .right{
+        padding-left: 0;
+    }
+
 }
