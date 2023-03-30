@@ -48,7 +48,7 @@
     height: 100%;
     background: #344E41;
     background: linear-gradient(90deg, #A3B18A 0%, #344E41 60%, rgba(255,186,0,1) 100%);
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-out;
 }
 
 .carousel-card:hover .filledbar {
