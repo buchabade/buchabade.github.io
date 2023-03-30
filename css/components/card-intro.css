@@ -5,10 +5,6 @@
     --font-serif: "Cardo", serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .cards-container {
     display: flex;
     grid-gap: 1rem;
@@ -103,6 +99,8 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-align: left;
+    padding: 0 1.5rem;
 }
 
 .card-text {
@@ -166,5 +164,3 @@
         transition-duration: 0s;
     }
 }
-
-/*# sourceMappingURL=card_hover.css.map */

@@ -1,12 +1,8 @@
-@import "header.css";
-@import "footer.css";
+/* PROJECT PALETTE (dark->light): black #344E41 #3A5A40 #588157 #A3B18A #DAD7CD white */
+/* MEDIA QUERIES: 800px & 799px */
 
-@import "tables.css";
-@import "card_hover/card_hover.css";
-@import "caorusel.css";
-@import "card-carousel.css";
-
-/* PROJECT PALETTE (dark<->light): black #344E41 #3A5A40 #588157 #A3B18A #DAD7CD */
+@import "components/header.css";
+@import "components/footer.css";
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -21,6 +17,10 @@
 @font-face {
     font-family: "Open Sans";
     src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format('truetype');
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html, body {
@@ -42,15 +42,42 @@ article{
     width: 100%;
 }
 
+label, p, a, i {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+h1 a {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+h2 a {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+hr {
+    color: black;
+    border: 1px solid black;
+    margin: 0 1.5rem;
+}
+
 .section{
     width: 100%;
     text-align: justify;
     padding: 0 1.5rem 5rem 1.5rem;
-}
-
-.card-title{
-    text-align: left;
-    padding: 0 1.5rem;
 }
 
 .flex {
@@ -85,17 +112,11 @@ article{
     padding-left: 1rem;
 }
 
-.image{
+.image-with-top{
     padding-top: 1.75rem;
 }
 
-.event-box{
-    margin: 0;
-    padding: 0 1.5rem 0 1.5rem;
-    width: 20%;
-}
-
-.event-btn {
+.button-max-width {
     cursor: pointer;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
@@ -109,101 +130,10 @@ article{
     border-radius: 5px;
     width: 100%;
 }
-.event-btn:hover {
-    background-color: #0d0d0d;
-}
 
-.flex .community-item{
-    padding: 0 0.5rem;
-    width: 25%;
-}
-
-.map {
-    width: 100%;
-    height: 75vh;
-}
-
-.map-location{
-    padding: 0.25rem 0.25rem 0 0.25rem;
-    border-radius: 8px;
-    background-color: black;
-    color: white;
-    margin-bottom: 1rem;
-    text-align: left;
-    height: min-content;
-    align-items: center;
-    display: flex;
-}
-
-.map-location:hover {
-    background-color: #0d0d0d;
-}
-
-.map-location h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-}
-
-.map-location p {
-    letter-spacing: 0.025rem;
-    text-transform: uppercase;
-    font-size: 0.65rem;
-}
-
-.map-location img {
-    width: 100%;
-    border-radius: 5px;
-    margin: 0;
-    padding: 0;
-}
-
-#hipica{
-    display: block;
-}
-
-#aldea, #capela, #monte, #muino{
-    display: none;
-}
-
-label, p, a, i {
-    font-size: 1rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    text-align: left;
-}
-
-h1 a {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.75rem;
-    text-align: left;
-}
-
-h2 a {
-    font-size: 1.75rem;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-h3 a {
-    font-size: 1.25rem;
-}
-
-hr {
-    color: black;
-    border: 1px solid black;
-    margin: 0 1.5rem;
-}
-
-.gallery-button {
+.button-min-width {
     cursor: pointer;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     font-size: 0.65rem;
     font-weight: bold;
@@ -213,14 +143,10 @@ hr {
     background-color: black;
     border: none;
     border-radius: 5px;
-    width: 100%;
-}
-.gallery-button:hover {
-    background-color: #0d0d0d;
 }
 
-.gallery-top-separator{
-    height: 2.25rem;
+.button-max-width:hover, .button-min-width:hover {
+    background-color: #0d0d0d;
 }
 
 @media (max-width: 799px) {
@@ -239,32 +165,6 @@ hr {
 
     .right{
         padding-left: 0;
-    }
-
-    .event-box{
-        padding: 0;
-        width: 100%;
-    }
-
-    .event-box:not(:first-child){
-        margin-top: 5rem;
-    }
-
-    .flex .community-item{
-        padding: 0;
-        width: 100%;
-    }
-
-    .map-location{
-        padding: 0.5rem;
-    }
-
-    .gallery-button {
-        width: auto;
-    }
-
-    .gallery-top-separator{
-        display: none;
     }
 
 }

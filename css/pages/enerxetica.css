@@ -1,3 +1,8 @@
+@import "../components/tables.css";
+@import "../components/card-intro.css";
+@import "../components/card-members.css";
+
+/* CARD-MENU IMAGES */
 .card:nth-child(1):before {
     background-image: url('../../assets/2_enerxetica/intro_1.JPG');
 }

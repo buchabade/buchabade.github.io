@@ -1,0 +1,43 @@
+@import "../components/gallery-carousel.css";
+
+#hipica{
+    display: block;
+}
+
+#aldea, #capela, #monte, #muino{
+    display: none;
+}
+
+.gallery-button {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.gallery-button:hover {
+    background-color: #0d0d0d;
+}
+
+.gallery-top-separator{
+    height: 2.25rem;
+}
+
+@media (max-width: 799px) {
+
+    .gallery-button {
+        width: auto;
+    }
+
+    .gallery-top-separator{
+        display: none;
+    }
+
+}
