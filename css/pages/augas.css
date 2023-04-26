@@ -4,11 +4,11 @@
 
 /* CARD-MENU IMAGES */
 .card:nth-child(1):before {
-    background-image: url('../../assets/4_augas/intro_1.JPG');
+    background-image: url('../../assets/4_augas/intro_1.webp');
 }
 .card:nth-child(2):before {
-    background-image: url('../../assets/4_augas/intro_2.JPG');
+    background-image: url('../../assets/4_augas/intro_2.webp');
 }
 .card:nth-child(3):before {
-    background-image: url('../../assets/4_augas/intro_3.JPG');
+    background-image: url('../../assets/4_augas/intro_3.webp');
 }

@@ -4,14 +4,14 @@
 
 /* CARD-MENU IMAGES */
 .card:nth-child(1):before {
-    background-image: url('../../assets/2_enerxetica/intro_1.JPG');
+    background-image: url('../../assets/2_enerxetica/intro_1.webp');
 }
 .card:nth-child(2):before {
-    background-image: url('../../assets/2_enerxetica/intro_2.JPG');
+    background-image: url('../../assets/2_enerxetica/intro_2.webp');
 }
 .card:nth-child(3):before {
-    background-image: url('../../assets/2_enerxetica/intro_3.JPG');
+    background-image: url('../../assets/2_enerxetica/intro_3.webp');
 }
 .card:nth-child(4):before {
-    background-image: url('../../assets/2_enerxetica/intro_4.JPG');
+    background-image: url('../../assets/2_enerxetica/intro_4.webp');
 }
