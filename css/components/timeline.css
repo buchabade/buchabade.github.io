@@ -1,5 +1,4 @@
 .timeline {
-    line-height: 1.5;
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -25,14 +24,14 @@
     margin: 15px 0;
     padding-left: 0;
     list-style-type: none;
-    color: #bfc1c3;
+    color: #A3B18A;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
 .timeline__nav ul li.active {
     font-weight: bold;
-    color: #f94125;
+    color: #3A5A40;
     border-bottom: 1px dotted transparent;
     transform: scale(1.2);
 }
