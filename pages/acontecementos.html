@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pages/acontecementos.css">
+    <link rel="stylesheet" href="../css/components/timeline.css">
 
     <link rel="icon" type="image/x-icon" href="../assets/logo_cler.png">
     <meta name="keywords" content="Buchabade, Buchabad, Comunidad, Comunidade, Acontecementos, Acontecemento,
@@ -15,6 +16,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acontecementos / Buchabade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +49,173 @@
         <div class="section" style="animation: fadein 0.4s; min-height: 90vh;">
 
             <h1>Acontecementos</h1>
-            <p><i class="fa fa-wrench"></i>&nbsp;En desenvolvemento...</p>
+
+            <article class="timeline">
+                <nav class="timeline__nav">
+                    <ul>
+                        <li><span>Abr. 2023</span></li>
+                        <li><span>Feb. 2023</span></li>
+
+                    </ul>
+                </nav>
+                <section class="timeline__section">
+                    <div class="wrapper">
+                        <h2 class="milestone">Abril 2023 - Xornada de traballo comunal</h2>
+                        <p>O día 4 de marzo xuntámonos unhas 40 persoas para plantar castiñeiros e freixos, eliminar
+                            acacias e eucaliptos e facer unha poza para anfibios.</p>
+                        <p>Con estas actuacións queremos contribuir a que aumente a biodiversidade no noso monte. A poza
+                            servirá para mellorar as condicións para as poboacións de anfibios e con elo de toda a fauna que
+                            poden traer acompañada.</p>
+                        <p>Plantar freixos, pradairos e sobreiras supón reintroducir especies casi desaparecidas da nosa
+                            contorna. Tamén prantamos 25 castiñeiros de froita variedade "Maruxa", haberá que coidalos estos
+                            primeiros anos.</p>
+                        <div class="slick">
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_1.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_2.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_3.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_2.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_3.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_2.JPG" alt="">
+                            </div>
+                            <div>
+                                <img style="height: 20vh; border-radius: 5px" src="../assets/0_index/intro_index_3.JPG" alt="">
+                            </div>
+                        </div>
+                        <br>
+
+                        <h2 class="milestone">Febreiro 2023 - Buchabade na web</h2>
+                        <p>Nesta data publícase a primeira versión da Web de Buchabade no Internet.</p>
+
+                    </div>
+                </section>
+            </article>
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.slick').slick({
+                        dots: true,
+                        infinite: false,
+                        speed: 300,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        arrows: false,
+                        responsive: [
+                            {
+                                breakpoint: 1600,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 1,
+                                    autoplaySpeed: 2000,
+                                }
+                            },
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                    autoplaySpeed: 2500,
+                                }
+                            },
+                            {
+                                breakpoint: 799,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    autoplaySpeed: 2500,
+                                }
+                            },
+                        ]
+                    });
+                });
+            </script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let stickyTop = 0,
+                        scrollTarget = false;
+                    let timeline = document.querySelector('.timeline__nav'),
+                        items = timeline.querySelectorAll('li'),
+                        milestones = document.querySelectorAll('.timeline__section .milestone'),
+                        offsetTop = parseInt(window.getComputedStyle(timeline).getPropertyValue('top'));
+
+                    const TIMELINE_VALUES = {
+                        start: 190,
+                        step: 30
+                    };
+
+                    window.addEventListener('resize', function () {
+                        timeline.classList.remove('fixed');
+                        stickyTop = timeline.offsetTop - offsetTop;
+                        window.dispatchEvent(new Event('scroll'));
+                    });
+
+                    window.dispatchEvent(new Event('resize'));
+
+                    window.addEventListener('scroll', function () {
+                        if (window.pageYOffset > stickyTop) {
+                            timeline.classList.add('fixed');
+                        } else {
+                            timeline.classList.remove('fixed');
+                        }
+                    });
+
+                    items.forEach(function(item, index) {
+                        item.querySelector('span').addEventListener('click', function () {
+                            let milestone = milestones[index];
+                            if (! item.classList.contains('active') && milestone) {
+                                scrollTarget = index;
+                                let scrollTargetTop = milestone.offsetTop - 80;
+                                window.scroll({top: scrollTargetTop, behavior: 'smooth'});
+                            }
+                        });
+                    });
+
+                    window.addEventListener('scroll', function () {
+                        let viewLine = window.pageYOffset + window.innerHeight / 3,
+                            active = -1;
+
+                        if (scrollTarget === false) {
+                            milestones.forEach(function(milestone, index) {
+                                if (milestone.offsetTop - viewLine > 0) {
+                                    return false;
+                                }
+                                active = index;
+                            });
+                        } else {
+                            active = scrollTarget;
+                        }
+
+                        timeline.style.top = -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + 'px';
+                        items.forEach(function(item) {
+                            item.classList.remove('active');
+                        });
+                        if (active !== -1) {
+                            items[active].classList.add('active');
+                        } else {
+                            items[0].classList.add('active');
+                        }
+                    });
+
+                    window.dispatchEvent(new Event('scroll'));
+
+
+                });
+
+
+            </script>
 
         </div>
 
