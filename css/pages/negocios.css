@@ -1,16 +1,17 @@
-/* TODO: REVIEW */
-
-
 .map {
     width: 100%;
     height: 75vh;
 }
 
+.negocios-container {
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+
 .map-location{
     padding: 0.25rem 0.25rem 0 0.25rem;
     border-radius: 8px;
-    background-color: black;
-    color: white;
+    color: black;
     margin-bottom: 1rem;
     text-align: left;
     height: min-content;
@@ -18,9 +19,10 @@
     display: flex;
 }
 
+/*
 .map-location:hover {
     background-color: #0d0d0d;
-}
+}*/
 
 .map-location h3 {
     margin-top: 0.5rem;
@@ -41,6 +43,11 @@
 }
 
 @media (max-width: 799px) {
+
+    .negocios-container {
+        overflow-y: visible;
+        max-height: none;
+    }
 
     .map-location{
         padding: 0.5rem;
