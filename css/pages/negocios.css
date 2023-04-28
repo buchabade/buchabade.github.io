@@ -19,11 +19,6 @@
     display: flex;
 }
 
-/*
-.map-location:hover {
-    background-color: #0d0d0d;
-}*/
-
 .map-location h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
