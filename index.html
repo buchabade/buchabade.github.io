@@ -55,6 +55,41 @@
 
     <article>
 
+        <script>
+            const images = [
+                'url(assets/0_index/fondo_intro_1.webp)',
+                'url(assets/0_index/fondo_intro_2.webp)',
+                'url(assets/0_index/fondo_intro_3.webp)'
+            ];
+
+            function changeBackground() {
+                const div = document.getElementById('miDiv');
+                let i = 0;
+                setInterval(() => {
+                    div.style.backgroundImage = images[i];
+                    i = (i + 1) % images.length;
+                }, 5000);
+            }
+
+            window.onload = () => {
+                changeBackground();
+            };
+        </script>
+
+        <div id="miDiv" class="section intro_container" style="min-height: 93vh; margin-top: -1vh">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 80vh">
+                <div style="text-align: center;">
+                    <p class="intro_text" style="font-style: italic"></p>
+                </div>
+                <div style="text-align: center;">
+                    <h1 class="intro_title" style="animation: fadein 0.4s;">Buchabade</h1>
+                </div>
+                <div style="text-align: center;">
+                    <p class="intro_text" style="font-style: italic">Baixa para coñecernos<br><i class="fa fa-angle-double-down" style="animation: bounce 3s infinite;"></i></p>
+                </div>
+            </div>
+        </div>
+
         <div class="section" style="animation: fadein 0.4s;min-height: 90vh">
             <div class="flex">
                 <div class="flex-item-50">
@@ -76,7 +111,7 @@
                 </div>
                 <div class="flex-item-50">
                     <div class="right">
-                        <h1>Buchabade, aldea.</h1>
+                        <h2>A vila</h2>
                         <p>
                             Aquí vivimos unhas 250 persoas. No ano 2008 chegamos a 270 habitantes, a maioría somos xente con
                             devanceiros neste lugar pero cada pouco vanse incorporando veciños novos dada a proximidade de
