@@ -63,7 +63,7 @@
             ];
 
             function changeBackground() {
-                const div = document.getElementById('miDiv');
+                const div = document.getElementById('intro');
                 let i = 0;
                 setInterval(() => {
                     div.style.backgroundImage = images[i];
@@ -76,10 +76,12 @@
             };
         </script>
 
-        <div id="miDiv" class="section intro_container" style="min-height: 93vh; margin-top: -1vh">
+        <div id="intro" class="section intro_container" style="min-height: 93vh; margin-top: -1vh">
             <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 80vh">
                 <div style="text-align: center;">
-                    <p class="intro_text" style="font-style: italic"></p>
+                    <img src="assets/0_index/fondo_intro_1.webp" alt="" style="width: 0; height: 0">
+                    <img src="assets/0_index/fondo_intro_2.webp" alt="" style="width: 0; height: 0">
+                    <img src="assets/0_index/fondo_intro_3.webp" alt="" style="width: 0; height: 0">
                 </div>
                 <div style="text-align: center;">
                     <h1 class="intro_title" style="animation: fadein 0.4s;">Buchabade</h1>
