@@ -53,6 +53,15 @@
     .card {
         height: 33vh;
     }
+
+    .card-content h2{
+        font-size: 0.9rem;
+    }
+
+    .card-content p{
+        font-size: 0.8rem;
+    }
+
 }
 
 .card:before {

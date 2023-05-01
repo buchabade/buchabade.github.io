@@ -39,4 +39,8 @@ footer i {
         margin-right: 0;
     }
 
+    footer p a {
+        font-size: 0.9rem;
+    }
+
 }
