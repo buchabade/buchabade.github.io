@@ -87,12 +87,45 @@
                     <h1 class="intro_title" style="animation: fadein 0.8s;">Buchabade</h1>
                 </div>
                 <div style="text-align: center;">
-                    <p class="intro_text" style="font-style: italic">Baixa para coñecernos<br><i class="fa fa-angle-double-down" style="animation: bounce 3s infinite;"></i></p>
+                    <a id="scroll-to" style="color: white" href="#a-vila">
+                        <p class="intro_text" style="font-style: italic">Baixa para coñecernos<br>
+                            <i class="fa fa-angle-double-down" style="animation: bounce 3s infinite;"></i>
+                        </p>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="section" style="animation: fadein 0.4s;min-height: 90vh">
+        <script>
+            const scrollToLink = document.querySelector('#scroll-to');
+
+            scrollToLink.addEventListener('click', () => {
+                const targetPosition = window.innerHeight * 0.92;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+
+                const duration = 1500;
+                let start = null;
+                window.requestAnimationFrame(step);
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+                    window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
+                    if (progress < duration) window.requestAnimationFrame(step);
+                }
+
+                function easeInOutQuad(t, b, c, d) {
+                    t /= d/2;
+                    if (t < 1) return c/2*t*t + b;
+                    t--;
+                    return -c/2 * (t*(t-2) - 1) + b;
+                }
+            });
+        </script>
+
+
+        <div id="a-vila" class="section" style="animation: fadein 0.4s;min-height: 90vh">
             <div class="flex">
                 <div class="flex-item-50">
                     <div class="left">
