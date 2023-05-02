@@ -55,28 +55,35 @@
 
     <article>
 
-        <script>
-            const images = [
-                'url(assets/0_index/fondo_intro_1.webp)',
-                'url(assets/0_index/fondo_intro_2.webp)',
-                'url(assets/0_index/fondo_intro_3.webp)'
-            ];
-
-            function changeBackground() {
-                const div = document.getElementById('intro');
-                let i = 0;
-                setInterval(() => {
-                    div.style.backgroundImage = images[i];
-                    i = (i + 1) % images.length;
-                }, 5000);
-            }
-
-            window.onload = () => {
-                changeBackground();
-            };
-        </script>
-
         <div id="intro" class="section intro_container" style="min-height: 93vh; margin-top: -1vh">
+            <script>
+                function scrollToIntro(){
+                    const targetElement = document.querySelector('#a-vila');
+                    const targetPosition = targetElement.offsetTop - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+
+                    const duration = 400;
+                    let start = null;
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
+                        if (progress < duration) window.requestAnimationFrame(step);
+                    }
+
+                    // Easing function para una transición suave
+                    function easeInOutQuad(t, b, c, d) {
+                        t /= d/2;
+                        if (t < 1) return c/2*t*t + b;
+                        t--;
+                        return -c/2 * (t*(t-2) - 1) + b;
+                    }
+                }
+            </script>
+
             <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 80vh">
                 <div style="text-align: center;">
                     <img src="assets/0_index/fondo_intro_1.webp" alt="" style="width: 0; height: 0">
@@ -87,7 +94,7 @@
                     <h1 class="intro_title" style="animation: fadein 0.8s;">Buchabade</h1>
                 </div>
                 <div style="text-align: center;">
-                    <a id="scroll-to" style="color: white" href="#a-vila">
+                    <a style="color: white; cursor: pointer" onclick="scrollToIntro()">
                         <p class="intro_text" style="font-style: italic">Baixa para coñecernos<br>
                             <i class="fa fa-angle-double-down" style="animation: bounce 3s infinite;"></i>
                         </p>
@@ -96,37 +103,28 @@
             </div>
         </div>
 
-        <script>
-            const scrollToLink = document.querySelector('#scroll-to');
-
-            scrollToLink.addEventListener('click', () => {
-                const targetPosition = window.innerHeight * 0.92;
-                const startPosition = window.pageYOffset;
-                const distance = targetPosition - startPosition;
-
-                const duration = 1500;
-                let start = null;
-                window.requestAnimationFrame(step);
-
-                function step(timestamp) {
-                    if (!start) start = timestamp;
-                    const progress = timestamp - start;
-                    window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
-                    if (progress < duration) window.requestAnimationFrame(step);
-                }
-
-                function easeInOutQuad(t, b, c, d) {
-                    t /= d/2;
-                    if (t < 1) return c/2*t*t + b;
-                    t--;
-                    return -c/2 * (t*(t-2) - 1) + b;
-                }
-            });
-        </script>
-
-
         <div id="a-vila" class="section" style="animation: fadein 0.4s;min-height: 90vh">
             <div class="flex">
+                <script>
+                    const images = [
+                        'url(assets/0_index/fondo_intro_1.webp)',
+                        'url(assets/0_index/fondo_intro_2.webp)',
+                        'url(assets/0_index/fondo_intro_3.webp)'
+                    ];
+
+                    function changeBackground() {
+                        const div = document.getElementById('intro');
+                        let i = 0;
+                        setInterval(() => {
+                            div.style.backgroundImage = images[i];
+                            i = (i + 1) % images.length;
+                        }, 5000);
+                    }
+
+                    window.onload = () => {
+                        changeBackground();
+                    };
+                </script>
                 <div class="flex-item-50">
                     <div class="left">
                         <div class="image-with-top">
