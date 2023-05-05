@@ -57,6 +57,26 @@
 
         <div id="intro" class="section intro_container" style="min-height: 93vh; margin-top: -1vh">
             <script>
+                const images = [
+                    'url(assets/0_index/fondo_intro_1.webp)',
+                    'url(assets/0_index/fondo_intro_2.webp)',
+                    'url(assets/0_index/fondo_intro_3.webp)'
+                ];
+
+                function changeBackground() {
+                    const div = document.getElementById('intro');
+                    let i = 0;
+                    setInterval(() => {
+                        div.style.backgroundImage = images[i];
+                        i = (i + 1) % images.length;
+                    }, 5000);
+                }
+
+                window.onload = () => {
+                    changeBackground();
+                };
+            </script>
+            <script>
                 function scrollToIntro(){
                     const targetElement = document.querySelector('#a-vila');
                     const targetPosition = targetElement.offsetTop - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -105,26 +125,6 @@
 
         <div id="a-vila" class="section" style="animation: fadein 0.4s;min-height: 90vh">
             <div class="flex">
-                <script>
-                    const images = [
-                        'url(assets/0_index/fondo_intro_1.webp)',
-                        'url(assets/0_index/fondo_intro_2.webp)',
-                        'url(assets/0_index/fondo_intro_3.webp)'
-                    ];
-
-                    function changeBackground() {
-                        const div = document.getElementById('intro');
-                        let i = 0;
-                        setInterval(() => {
-                            div.style.backgroundImage = images[i];
-                            i = (i + 1) % images.length;
-                        }, 5000);
-                    }
-
-                    window.onload = () => {
-                        changeBackground();
-                    };
-                </script>
                 <div class="flex-item-50">
                     <div class="left">
                         <div class="image-with-top">

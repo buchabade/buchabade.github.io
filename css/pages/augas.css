@@ -12,3 +12,30 @@
 .card:nth-child(3):before {
     background-image: url('../../assets/4_augas/intro_3.webp');
 }
+
+.custom-prev-arrow {
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+.custom-next-arrow {
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
