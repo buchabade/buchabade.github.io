@@ -118,6 +118,10 @@ hr {
     width: 80%;
 }
 
+.flex-item-40 {
+    width: 40%;
+}
+
 .left{
     padding-right: 1rem;
 }
@@ -169,7 +173,7 @@ hr {
         display: block;
     }
 
-    .flex-item-50, .flex-item-66, .flex-item-33, .flex-item-20, .flex-item-80  {
+    .flex-item-50, .flex-item-66, .flex-item-33, .flex-item-20, .flex-item-80, .flex-item-40  {
         width: 100%;
     }
 
