@@ -4,10 +4,10 @@
 
 /* CARD-MENU IMAGES */
 .card:nth-child(1):before {
-    background-image: url('../../assets/3_montes/intro_1.webp');
+    background-image: url('../../assets/3_montes/mapa.webp');
 }
 .card:nth-child(2):before {
-    background-image: url('../../assets/3_montes/intro_2.webp');
+    background-image: url('../../assets/3_montes/limpeza.webp');
 }
 
 .custom-prev-arrow {
