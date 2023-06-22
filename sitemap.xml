@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://buchabade.com/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/acontecementos.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/galeria.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/negocios.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/novas_avisos.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://buchabade.com/pages/augas/info_augas.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/augas/introducion_augas.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://buchabade.com/pages/enerxetica/info_enerxetica.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/enerxetica/introducion_enerxetica.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://buchabade.com/pages/montes/info_montes.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://buchabade.com/pages/montes/introducion_montes.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
