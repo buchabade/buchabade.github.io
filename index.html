@@ -78,7 +78,7 @@
             </script>
             <script>
                 function scrollToIntro(){
-                    const targetElement = document.querySelector('#a-vila');
+                    const targetElement = document.querySelector('#crear-comunidade-enerxetica');
                     const targetPosition = targetElement.offsetTop - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
                     const startPosition = window.pageYOffset;
                     const distance = targetPosition - startPosition;
@@ -123,27 +123,57 @@
             </div>
         </div>
 
-        <div id="a-vila" class="section" style="animation: fadein 0.4s;min-height: 90vh">
+        <div id="crear-comunidade-enerxetica" class="section" style="animation: fadein 1.2s;min-height: 50vh">
             <div class="flex">
                 <div class="flex-item-50">
                     <div class="left">
                         <div class="image-with-top">
-                            <div class="slick">
-                                <div>
-                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_1.webp" alt="">
-                                </div>
-                                <div>
-                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_2.webp" alt="">
-                                </div>
-                                <div>
-                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_3.webp" alt="">
-                                </div>
-                            </div>
+                            <iframe style="width: 100%; min-height: 50vh"
+                                    src="https://www.youtube.com/embed/w7efwGQA4UA"
+                                    title="Cap.1. ¿Cómo crear una comunidad energética? Está en nuestras manos. Grupo motor: El Movimiento"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                            </iframe>
                         </div>
+
                     </div>
                 </div>
                 <div class="flex-item-50">
                     <div class="right">
+                        <h2>Como crear unha comunidade enerxética?</h2>
+                        <p>
+                            <i><q>Las comunidades energéticas son, según los datos de la UE, cada vez más habituales.
+                                Los estados que cuentan con un mayor número de estas asociaciones basadas en el
+                                autoconsumo energético local son Alemania, Dinamarca y Países Bajos. En España, hay más
+                                de 40 comunidades proyectadas, según datos del Instituto para la Diversificación y el
+                                Ahorro de Energía (IDAE). Según la proyección de un estudio de la asociación ecologista
+                                Amigos de la Tierra, solo con comunidades energéticas basadas en autoproducción se
+                                podría llegar a satisfacer para 2030 un 58% de la demanda eléctrica, si se pusieran en
+                                marcha ya.
+                            </q></i>
+                            <br><br>
+                            <i><q>[...] ¿qué son las comunidades energéticas? Se trata de grupos de personas que se
+                                constituyen legalmente para llevar a cabo un proyecto de energías limpias basado en la
+                                descentralización de la energía y con las personas como protagonistas de este cambio
+                                energético. Las comunidades energéticas se muestran como elementos clave para democratizar
+                                la energía y luchar contra la emergencia climática, pero también son un potente germen que
+                                favorece la creación de un fuerte sentimiento de pertenencia a una comunidad. “Lo importante
+                                no es llegar al punto y conseguir el hito, sino el camino que uno pasa a través de todas
+                                esas fases y las cuestiones que va sorteando, las relaciones que se van trabando, los
+                                aprendizajes que uno va adquiriendo”, cuenta Rosario Alcantarilla, de la cooperativa
+                                Comunidad Arroyo Alumbra.</q></i>
+                            <br><br>
+                            Fonte: <a style="color: black; font-weight: bold" href="https://www.eldiario.es/edcreativo/son-son-fundamentales-comunidades-energeticas_1_10406560.html" target="_blank">eldiario.es</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="a-vila" class="section" style="animation: fadein 0.4s;min-height: 90vh">
+            <div class="flex">
+                <div class="flex-item-50">
+                    <div class="left">
                         <h2>A vila</h2>
                         <p>
                             Aquí vivimos unhas 250 persoas. No ano 2008 chegamos a 270 habitantes, a maioría somos xente con
@@ -172,13 +202,41 @@
                         </p>
                     </div>
                 </div>
+                <div class="flex-item-50">
+                    <div class="right">
+                        <div class="image-with-top">
+                            <div class="slick">
+                                <div>
+                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_1.webp" alt="">
+                                </div>
+                                <div>
+                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_2.webp" alt="">
+                                </div>
+                                <div>
+                                    <img style="width: 100%; border-radius: 5px" src="assets/0_index/intro_index_3.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
-        <div class="section" style="animation: fadein 0.8s;min-height: 90vh">
+        <div id="no-mapa" class="section" style="animation: fadein 0.8s;min-height: 90vh">
             <div class="flex">
                 <div class="flex-item-50">
                     <div class="left">
+
+                        <div class="image-with-top">
+                            <iframe class="map"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7158.369442887408!2d-8.540256779247256!3d42.401974504185375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1679573124258!5m2!1ses!2ses"
+                                    width="100%" height="100%" style="border:0; border-radius: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex-item-50">
+                    <div class="right">
                         <a style="color: black" href="https://goo.gl/maps/1MgNnb5uyHGUdKjz7" target="_blank">
                             <h2>No mapa</h2></a>
                         <p>É moi recomendable un paseo polos camiños esquecidos pola zona de abaixo do lugar, son ben recoñecibles
@@ -194,15 +252,6 @@
                             <a style="color: black" href="https://centro-ecuestre-atlantico.jimdosite.com" target="_blank">Club Hípico Atlántico</a>,
                             unha farmacia, un serradoiro de granito e unha compra-venta de coches e lavado.
                         </p>
-                    </div>
-                </div>
-                <div class="flex-item-50">
-                    <div class="right">
-                        <div class="image-with-top">
-                            <iframe class="map"
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7158.369442887408!2d-8.540256779247256!3d42.401974504185375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1679573124258!5m2!1ses!2ses"
-                                    width="100%" height="100%" style="border:0; border-radius: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
                     </div>
                 </div>
             </div>
